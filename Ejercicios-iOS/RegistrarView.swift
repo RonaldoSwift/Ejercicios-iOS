@@ -56,7 +56,7 @@ struct RegistrarView: View{
             .foregroundColor(Color.white)
             .background(Color("ColorBotones"))
             .cornerRadius(10)
-
+            
         }
         .padding()
         .background(Color("BlueFondo"))
