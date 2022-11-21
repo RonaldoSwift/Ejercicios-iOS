@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FB0F640D2927F90A002EA9B2 /* RegistrarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F640C2927F90A002EA9B2 /* RegistrarView.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -36,6 +37,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		FB0F640C2927F90A002EA9B2 /* RegistrarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarView.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -98,6 +100,7 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FB0F640C2927F90A002EA9B2 /* RegistrarView.swift */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
@@ -264,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				FB0F640D2927F90A002EA9B2 /* RegistrarView.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
