@@ -13,7 +13,7 @@ struct Ejercicios_iOSApp: App {
 
     var body: some Scene {
         WindowGroup {
-            RegistrarClienteView()
+            RegistrarView()
                 .environment(\.managedObjectContext, persistenceController.container.viewContext)
         }
     }

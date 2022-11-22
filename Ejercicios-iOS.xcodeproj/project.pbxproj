@@ -18,6 +18,7 @@
 		FB91C5532919E11900B6F025 /* Ejercicios_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C5522919E11900B6F025 /* Ejercicios_iOSTests.swift */; };
 		FB91C55D2919E11900B6F025 /* Ejercicios_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */; };
 		FB91C55F2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */; };
+		FBA39AD6292D3AC50049EEA4 /* RegistrarCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -52,6 +53,7 @@
 		FB91C5582919E11900B6F025 /* Ejercicios-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ejercicios-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSUITests.swift; sourceTree = "<group>"; };
 		FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarCuentaView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +81,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB8553FB292C335F00CBBCA0 /* Pantallas */ = {
+			isa = PBXGroup;
+			children = (
+				FB0F640C2927F90A002EA9B2 /* RegistrarView.swift */,
+				FB06F6E2292BEB0C00041937 /* RegistrarClienteView.swift */,
+				FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */,
+			);
+			path = Pantallas;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -102,14 +114,13 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				FB0F640C2927F90A002EA9B2 /* RegistrarView.swift */,
+				FB8553FB292C335F00CBBCA0 /* Pantallas */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
 				FB91C5452919E11800B6F025 /* Persistence.swift */,
 				FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */,
 				FB91C5422919E11800B6F025 /* Preview Content */,
-				FB06F6E2292BEB0C00041937 /* RegistrarClienteView.swift */,
 			);
 			path = "Ejercicios-iOS";
 			sourceTree = "<group>";
@@ -273,6 +284,7 @@
 				FB06F6E3292BEB0D00041937 /* RegistrarClienteView.swift in Sources */,
 				FB0F640D2927F90A002EA9B2 /* RegistrarView.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
+				FBA39AD6292D3AC50049EEA4 /* RegistrarCuentaView.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
 			);
@@ -435,6 +447,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ejercicios-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -463,6 +476,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"Ejercicios-iOS/Preview Content\"";
+				DEVELOPMENT_TEAM = H9JXH336V5;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
