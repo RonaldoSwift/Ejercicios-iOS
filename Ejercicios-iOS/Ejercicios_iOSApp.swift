@@ -9,12 +9,10 @@ import SwiftUI
 
 @main
 struct Ejercicios_iOSApp: App {
-    let persistenceController = PersistenceController.shared
 
     var body: some Scene {
         WindowGroup {
-            RegistrarView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MenuPrincipalView()
         }
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 import SwiftUI
 
-struct RegistrarView: View{
+struct MenuPrincipalView: View{
     
     var body: some View{
         NavigationView{
@@ -71,6 +71,6 @@ struct RegistrarView: View{
 struct RegistrarView_Previews: PreviewProvider{
     
     static var previews: some View{
-        RegistrarView()
+        MenuPrincipalView()
     }
 }
