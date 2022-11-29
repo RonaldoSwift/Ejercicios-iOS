@@ -29,7 +29,9 @@ struct RegistrarAlumnoView: View{
             
             HStack{
                 Button {
-                    
+                    Task{
+                        await registrarAlumnoViewModel.crearCliente(nombre: nombreDeEstudiante, codigo: codigo)
+                    }
                 } label: {
                     Text("Registrar")
                         .padding()
@@ -39,7 +41,9 @@ struct RegistrarAlumnoView: View{
                 }
                 
                 Button {
-                    
+                    Task{
+                        await registrarAlumnoViewModel.obtenerTodosLosAlumnos()
+                    }
                 } label: {
                     Text("Mostrar")
                         .padding()

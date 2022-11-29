@@ -21,6 +21,7 @@ struct RegistrarAlumnoViewModel{
         }
     }
     
+    //    TIENE 5 FUNCIONES: obtenerTodosLosAlumnos, getAll, crearCliente, crear, saveContext
     func obtenerTodosLosAlumnos() async {
         do{
             let nombredealumnos = try await getAll()
@@ -39,16 +40,30 @@ struct RegistrarAlumnoViewModel{
         
     }
     
-    func crearCliente(){
-        
+    func crearCliente(nombre: String, codigo: String) async{
+        do{
+            try await crear(nombreAlumno: nombre, codigoDeAlumno: codigo)
+        } catch{
+            
+        }
     }
     
-    private func crear(){
-        
+    private func crear(nombreAlumno: String, codigoDeAlumno: String) throws -> (){
+        let alumnoEntity = AlumnoEntity(context: persistenContainer.viewContext)
+        alumnoEntity.id = 1
+        alumnoEntity.nombre = nombreAlumno
+        alumnoEntity.codigo = codigoDeAlumno
+        saveContext()
     }
     
     private func saveContext(){
-        
+        let context = persistenContainer.viewContext
+        if(context.hasChanges){
+            do{
+                try context.save()
+            } catch{
+                fatalError("Error: \(error.localizedDescription)")
+            }
+        }
     }
-    //    TIENE 5 FUNCIONES: obtenerTodosLosAlumnos, getAll, crearCliente, crear, saveContext
 }
