@@ -16,6 +16,9 @@
 		FB91C5532919E11900B6F025 /* Ejercicios_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C5522919E11900B6F025 /* Ejercicios_iOSTests.swift */; };
 		FB91C55D2919E11900B6F025 /* Ejercicios_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */; };
 		FB91C55F2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */; };
+		FB9375D12931321F00BBA0EB /* MenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9375D02931321F00BBA0EB /* MenuView.swift */; };
+		FB9375D32931355600BBA0EB /* RegistrarAlumnoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9375D22931355600BBA0EB /* RegistrarAlumnoView.swift */; };
+		FB9375D52931356700BBA0EB /* RegistrarAlumnoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB9375D42931356700BBA0EB /* RegistrarAlumnoViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +51,9 @@
 		FB91C5582919E11900B6F025 /* Ejercicios-iOSUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ejercicios-iOSUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSUITests.swift; sourceTree = "<group>"; };
 		FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		FB9375D02931321F00BBA0EB /* MenuView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuView.swift; sourceTree = "<group>"; };
+		FB9375D22931355600BBA0EB /* RegistrarAlumnoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarAlumnoView.swift; sourceTree = "<group>"; };
+		FB9375D42931356700BBA0EB /* RegistrarAlumnoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarAlumnoViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +81,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB15F99C293561630045CAD5 /* Registrar Alumno */ = {
+			isa = PBXGroup;
+			children = (
+				FB9375D42931356700BBA0EB /* RegistrarAlumnoViewModel.swift */,
+				FB9375D22931355600BBA0EB /* RegistrarAlumnoView.swift */,
+			);
+			path = "Registrar Alumno";
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +113,7 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				FB9375CF2931320A00BBA0EB /* Views */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
@@ -131,6 +147,15 @@
 				FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Ejercicios-iOSUITests";
+			sourceTree = "<group>";
+		};
+		FB9375CF2931320A00BBA0EB /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB9375D02931321F00BBA0EB /* MenuView.swift */,
+				FB15F99C293561630045CAD5 /* Registrar Alumno */,
+			);
+			path = Views;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -263,9 +288,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB9375D12931321F00BBA0EB /* MenuView.swift in Sources */,
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				FB9375D52931356700BBA0EB /* RegistrarAlumnoViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
+				FB9375D32931355600BBA0EB /* RegistrarAlumnoView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
