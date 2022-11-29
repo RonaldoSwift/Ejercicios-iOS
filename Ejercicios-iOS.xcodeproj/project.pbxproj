@@ -8,7 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
-		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
 		FB91C5442919E11800B6F025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5432919E11800B6F025 /* Preview Assets.xcassets */; };
 		FB91C5462919E11800B6F025 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C5452919E11800B6F025 /* Persistence.swift */; };
@@ -41,7 +40,6 @@
 /* Begin PBXFileReference section */
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
-		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB91C5402919E11800B6F025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB91C5432919E11800B6F025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB91C5452919E11800B6F025 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
@@ -115,7 +113,6 @@
 			children = (
 				FB9375CF2931320A00BBA0EB /* Views */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
-				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
 				FB91C5452919E11800B6F025 /* Persistence.swift */,
 				FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */,
@@ -292,7 +289,6 @@
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
 				FB9375D52931356700BBA0EB /* RegistrarAlumnoViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
-				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB9375D32931355600BBA0EB /* RegistrarAlumnoView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
 			);

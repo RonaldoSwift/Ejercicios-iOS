@@ -23,15 +23,20 @@ struct RegistrarAlumnoViewModel{
     
     func obtenerTodosLosAlumnos() async {
         do{
-            let alumnos = try await getAll()
-            print(alumnos)
+            let nombredealumnos = try await getAll()
+            print(nombredealumnos)
         }catch{
             
         }
     }
     
     private func getAll() throws -> [String]{
-        let request = .fetchRequest()
+        let request = AlumnoEntity.fetchRequest()
+        //map= tranformaciones de un tipo de dato a otro
+        return try persistenContainer.viewContext.fetch(request).map({ (alumnoEntity: AlumnoEntity) in
+            alumnoEntity.nombre!
+        })
+        
     }
     
     func crearCliente(){
@@ -45,5 +50,5 @@ struct RegistrarAlumnoViewModel{
     private func saveContext(){
         
     }
-//    TIENE 5 FUNCIONES: obtenerTodosLosAlumnos, getAll, crearCliente, crear, saveContext
+    //    TIENE 5 FUNCIONES: obtenerTodosLosAlumnos, getAll, crearCliente, crear, saveContext
 }
