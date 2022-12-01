@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		FB06F6E3292BEB0D00041937 /* RegistrarClienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F6E2292BEB0C00041937 /* RegistrarClienteView.swift */; };
 		FB0F640D2927F90A002EA9B2 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F640C2927F90A002EA9B2 /* MenuPrincipalView.swift */; };
+		FB26F3D42936D25D00E1213C /* VerClientesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26F3D32936D25D00E1213C /* VerClientesView.swift */; };
+		FB289E4329383B080065363F /* VerClientesViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB289E4229383B080065363F /* VerClientesViewModel.swift */; };
 		FB5A6655292ED055005787DC /* RegistrarClienteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB5A6654292ED055005787DC /* RegistrarClienteViewModel.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -40,6 +42,8 @@
 /* Begin PBXFileReference section */
 		FB06F6E2292BEB0C00041937 /* RegistrarClienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarClienteView.swift; sourceTree = "<group>"; };
 		FB0F640C2927F90A002EA9B2 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		FB26F3D32936D25D00E1213C /* VerClientesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerClientesView.swift; sourceTree = "<group>"; };
+		FB289E4229383B080065363F /* VerClientesViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerClientesViewModel.swift; sourceTree = "<group>"; };
 		FB5A6654292ED055005787DC /* RegistrarClienteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarClienteViewModel.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
@@ -79,6 +83,15 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		FB289E4129383ADD0065363F /* VerClientes */ = {
+			isa = PBXGroup;
+			children = (
+				FB26F3D32936D25D00E1213C /* VerClientesView.swift */,
+				FB289E4229383B080065363F /* VerClientesViewModel.swift */,
+			);
+			path = VerClientes;
+			sourceTree = "<group>";
+		};
 		FB5A6653292ECE9A005787DC /* CoreData */ = {
 			isa = PBXGroup;
 			children = (
@@ -99,6 +112,7 @@
 		FB8553FB292C335F00CBBCA0 /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				FB289E4129383ADD0065363F /* VerClientes */,
 				FB5A6656292ED5CC005787DC /* RegistrarCliente */,
 				FB0F640C2927F90A002EA9B2 /* MenuPrincipalView.swift */,
 				FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */,
@@ -298,6 +312,8 @@
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				FB5A6655292ED055005787DC /* RegistrarClienteViewModel.swift in Sources */,
 				FBA39AD6292D3AC50049EEA4 /* RegistrarCuentaView.swift in Sources */,
+				FB289E4329383B080065363F /* VerClientesViewModel.swift in Sources */,
+				FB26F3D42936D25D00E1213C /* VerClientesView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

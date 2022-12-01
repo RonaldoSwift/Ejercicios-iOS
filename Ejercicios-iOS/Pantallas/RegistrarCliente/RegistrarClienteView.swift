@@ -37,6 +37,7 @@ struct RegistrarClienteView: View{
             HStack{
                 Text("Ingrese DNI:")
                 TextField("DNI", text: $ingresoDNI )
+                    .keyboardType(.numberPad)
             }
             .padding()
             .background(Color.white)
@@ -65,35 +66,20 @@ struct RegistrarClienteView: View{
             .padding()
             .background(Color.white)
             .cornerRadius(10)
-            HStack{
-                Button("REGISTRAR"){
-                    Task{
-                        await registrarClienteViewModel.crearCliente(dni: Int(ingresoDNI)!, nombreCliente: ingreseNombre, direccion: ingreseDireccion, distrito: ingreseDistrito)
-                    }
+            
+            Button("REGISTRAR"){
+                Task{
+                    await registrarClienteViewModel.crearCliente(dni: Int(ingresoDNI)!, nombreCliente: ingreseNombre, direccion: ingreseDireccion, distrito: ingreseDistrito)
                 }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color("ColorBotones"))
-                .cornerRadius(20)
-                
-                Button {
-                    Task{
-                        await registrarClienteViewModel.obtenrTodosLosClientes()
-                    }
-                } label: {
-                    Text("Mostrar")
-                }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color("ColorBotones"))
-                .cornerRadius(20)
-
             }
+            .padding()
+            .foregroundColor(Color.white)
+            .background(Color("ColorBotones"))
+            .cornerRadius(20)
             
         }
         .padding()
         .background(Color("BlueFondo"))
-
     }
 }
 

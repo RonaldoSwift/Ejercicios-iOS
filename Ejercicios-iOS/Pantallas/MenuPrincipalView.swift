@@ -61,10 +61,20 @@ struct MenuPrincipalView: View{
                 .cornerRadius(10)
                 .padding()
                 
+                NavigationLink("VER CLIENTES") {
+                    VerClientesView()
+                }
+                .padding()
+                .foregroundColor(Color.white)
+                .background(Color("ColorBotones"))
+                .cornerRadius(10)
+                .padding()
+                
             }
             .padding()
             .background(Color("BlueFondo"))
         }
+        .navigationTitle("UPN")
     }
 }
 

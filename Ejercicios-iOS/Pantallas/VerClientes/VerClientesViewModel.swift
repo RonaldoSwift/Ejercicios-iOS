@@ -1,13 +1,13 @@
 //
-//  RegistrarClienteViewModel.swift
+//  VerClientesViewModel.swift
 //  Ejercicios-iOS
 //
-//  Created by Ronaldo Andre Vargas Huaman on 23/11/22.
+//  Created by Ronaldo Andre Vargas Huaman on 30/11/22.
 //
 
 import Foundation
 import CoreData
-class RegistrarClienteViewModel{
+class VerClientesViewModel{
     
     let persistenContainer : NSPersistentContainer
     
@@ -20,23 +20,20 @@ class RegistrarClienteViewModel{
         }
     }
     
-    func crearCliente(dni:Int, nombreCliente:String, direccion:String, distrito:String) async {
+    func obtenrTodosLosClientes() async -> [String]{
         do{
-            try crear(dni: dni, nombreCliente: nombreCliente, direccion: direccion, distrito: distrito)
-        } catch{
-            
+            let clientes = try getAll()
+            return clientes
+        }catch{
+            return []
         }
     }
     
-    
-    private func crear(dni:Int, nombreCliente:String, direccion:String, distrito:String) throws -> (){
-        let clienteEntity = ClienteEntity(context: persistenContainer.viewContext)
-        clienteEntity.id = 1
-        clienteEntity.dni = Int64(dni)
-        clienteEntity.nombre = nombreCliente
-        clienteEntity.direccion = direccion
-        clienteEntity.distrito = distrito
-        saveContext()
+    private func getAll() throws -> [String] {
+        let request = ClienteEntity.fetchRequest()
+        return try persistenContainer.viewContext.fetch(request).map({ (clienteEntity :ClienteEntity) in
+            clienteEntity.nombre!
+        })
     }
     
     private func saveContext (){
@@ -49,4 +46,5 @@ class RegistrarClienteViewModel{
             }
         }
     }
+    
 }
