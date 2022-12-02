@@ -20,6 +20,9 @@
 		FB91C55D2919E11900B6F025 /* Ejercicios_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */; };
 		FB91C55F2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */; };
 		FBA39AD6292D3AC50049EEA4 /* RegistrarCuentaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */; };
+		FBBB85DD293A62C300FBB687 /* VerCuentasView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB85DC293A62C300FBB687 /* VerCuentasView.swift */; };
+		FBBB85DF293A62D900FBB687 /* VerCuentasViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBBB85DE293A62D900FBB687 /* VerCuentasViewModel.swift */; };
+		FBE4D7172939210900D98287 /* RegistrarCuentaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE4D7162939210900D98287 /* RegistrarCuentaViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +59,9 @@
 		FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSUITests.swift; sourceTree = "<group>"; };
 		FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSUITestsLaunchTests.swift; sourceTree = "<group>"; };
 		FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarCuentaView.swift; sourceTree = "<group>"; };
+		FBBB85DC293A62C300FBB687 /* VerCuentasView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerCuentasView.swift; sourceTree = "<group>"; };
+		FBBB85DE293A62D900FBB687 /* VerCuentasViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerCuentasViewModel.swift; sourceTree = "<group>"; };
+		FBE4D7162939210900D98287 /* RegistrarCuentaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarCuentaViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +118,11 @@
 		FB8553FB292C335F00CBBCA0 /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
-				FB289E4129383ADD0065363F /* VerClientes */,
 				FB5A6656292ED5CC005787DC /* RegistrarCliente */,
+				FB289E4129383ADD0065363F /* VerClientes */,
+				FBE4D71529391EBC00D98287 /* RegistrarCuenta */,
+				FBBB85DB293A628B00FBB687 /* VerCuenta */,
 				FB0F640C2927F90A002EA9B2 /* MenuPrincipalView.swift */,
-				FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */,
 			);
 			path = Pantallas;
 			sourceTree = "<group>";
@@ -175,6 +182,24 @@
 				FB91C55E2919E11900B6F025 /* Ejercicios_iOSUITestsLaunchTests.swift */,
 			);
 			path = "Ejercicios-iOSUITests";
+			sourceTree = "<group>";
+		};
+		FBBB85DB293A628B00FBB687 /* VerCuenta */ = {
+			isa = PBXGroup;
+			children = (
+				FBBB85DC293A62C300FBB687 /* VerCuentasView.swift */,
+				FBBB85DE293A62D900FBB687 /* VerCuentasViewModel.swift */,
+			);
+			path = VerCuenta;
+			sourceTree = "<group>";
+		};
+		FBE4D71529391EBC00D98287 /* RegistrarCuenta */ = {
+			isa = PBXGroup;
+			children = (
+				FBA39AD5292D3AC50049EEA4 /* RegistrarCuentaView.swift */,
+				FBE4D7162939210900D98287 /* RegistrarCuentaViewModel.swift */,
+			);
+			path = RegistrarCuenta;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -309,12 +334,15 @@
 			files = (
 				FB06F6E3292BEB0D00041937 /* RegistrarClienteView.swift in Sources */,
 				FB0F640D2927F90A002EA9B2 /* MenuPrincipalView.swift in Sources */,
+				FBBB85DF293A62D900FBB687 /* VerCuentasViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				FB5A6655292ED055005787DC /* RegistrarClienteViewModel.swift in Sources */,
 				FBA39AD6292D3AC50049EEA4 /* RegistrarCuentaView.swift in Sources */,
 				FB289E4329383B080065363F /* VerClientesViewModel.swift in Sources */,
+				FBBB85DD293A62C300FBB687 /* VerCuentasView.swift in Sources */,
 				FB26F3D42936D25D00E1213C /* VerClientesView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				FBE4D7172939210900D98287 /* RegistrarCuentaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

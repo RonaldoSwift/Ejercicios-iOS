@@ -9,11 +9,12 @@ import Foundation
 import SwiftUI
 
 struct RegistrarCuentaView: View{
-    @State private var numeroDeCuenta = ""
-    @State private var tipoDeCuenta = ""
-    @State private var moneda = ""
-    @State private var saldoActual = ""
-    @State private var DNI = ""
+    @State private var numeroDeCuenta: String = ""
+    @State private var tipoDeCuenta: String = ""
+    @State private var moneda: String = ""
+    @State private var saldoActual: String = ""
+    @State private var DNI: String = ""
+    let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
     
     var body: some View{
         VStack{
@@ -33,6 +34,8 @@ struct RegistrarCuentaView: View{
             HStack{
                 Text("Numero de Cuenta:")
                 TextField("Ejm 16756400004530", text: $numeroDeCuenta)
+                    .keyboardType(.numberPad)
+
             }
             .padding()
             .background(Color.white)
@@ -58,6 +61,7 @@ struct RegistrarCuentaView: View{
             HStack{
                 Text("Saldo Actual:")
                 TextField("********", text: $saldoActual)
+                    .keyboardType(.numberPad)
             }
             .padding()
             .background(Color.white)
@@ -66,17 +70,28 @@ struct RegistrarCuentaView: View{
             HStack{
                 Text("DNI:")
                 TextField("Ejm 7****5", text: $DNI)
+                    .keyboardType(.numberPad)
             }
             .padding()
             .background(Color.white)
             .cornerRadius(10)
             
+            Button {
+                Task{
+                    await registrarCuentaViewModel.crearCuenta(cuenta: numeroDeCuenta, tipo: tipoDeCuenta, moneda: moneda, saldo: saldoActual, dni: Int(DNI)!)
+                }
+            } label: {
+                Text("REGISTRAR")
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color("ColorBotones"))
+                    .cornerRadius(20)
+            }
         }
         .padding()
         .background(Color("BlueFondo"))
     }
 }
-
 
 struct RegistrarCuentaView_Previews: PreviewProvider{
     

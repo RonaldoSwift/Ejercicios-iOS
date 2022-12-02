@@ -22,7 +22,6 @@ struct VerClientesView : View{
                     Text(stringe)
                 }
             }
-    
         }.task {
             let nombreDeClientes = await verClientesViewModel.obtenrTodosLosClientes()
             listaString = nombreDeClientes

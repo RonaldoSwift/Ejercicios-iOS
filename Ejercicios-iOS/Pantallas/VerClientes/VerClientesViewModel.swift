@@ -16,7 +16,7 @@ class VerClientesViewModel{
         self.persistenContainer.loadPersistentStores { (descripiton: NSPersistentStoreDescription, error: Error?) in
             if error != nil {
                 fatalError("No se pudo cargar la base de datos")
-            }
+            } 
         }
     }
     

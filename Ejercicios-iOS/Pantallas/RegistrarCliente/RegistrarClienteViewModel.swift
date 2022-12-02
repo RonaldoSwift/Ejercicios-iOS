@@ -28,7 +28,6 @@ class RegistrarClienteViewModel{
         }
     }
     
-    
     private func crear(dni:Int, nombreCliente:String, direccion:String, distrito:String) throws -> (){
         let clienteEntity = ClienteEntity(context: persistenContainer.viewContext)
         clienteEntity.id = 1

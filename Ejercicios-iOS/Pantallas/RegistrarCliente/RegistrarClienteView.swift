@@ -83,7 +83,6 @@ struct RegistrarClienteView: View{
     }
 }
 
-
 struct RegistrarClienteView_Previews: PreviewProvider{
     
     static var previews: some View{
