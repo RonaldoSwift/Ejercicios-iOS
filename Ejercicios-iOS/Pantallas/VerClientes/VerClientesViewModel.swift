@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 class VerClientesViewModel{
     
     let persistenContainer : NSPersistentContainer
@@ -16,11 +17,11 @@ class VerClientesViewModel{
         self.persistenContainer.loadPersistentStores { (descripiton: NSPersistentStoreDescription, error: Error?) in
             if error != nil {
                 fatalError("No se pudo cargar la base de datos")
-            } 
+            }
         }
     }
     
-    func obtenrTodosLosClientes() async -> [String]{
+    func obtenrTodosLosClientes() async -> [Cliente]{
         do{
             let clientes = try getAll()
             return clientes
@@ -29,10 +30,13 @@ class VerClientesViewModel{
         }
     }
     
-    private func getAll() throws -> [String] {
+    private func getAll() throws -> [Cliente] {
         let request = ClienteEntity.fetchRequest()
         return try persistenContainer.viewContext.fetch(request).map({ (clienteEntity :ClienteEntity) in
-            clienteEntity.nombre!
+            Cliente(dni: Int(clienteEntity.dni),
+                    nombre: clienteEntity.nombre ?? "Error!!! no se encontro el nombre",
+                    direccion: clienteEntity.direccion ?? "Error!!! no se encontro la direccion",
+                    distrito: clienteEntity.distrito ?? "Error!!! no se encontro el distrio")
         })
     }
     

@@ -13,55 +13,53 @@ struct MenuPrincipalView: View{
     var body: some View{
         NavigationView{
             VStack{
-                
                 Text("BANCO CONTINENTAL BBVA")
                     .foregroundColor(Color.white)
                     .padding()
                 
                 Image("BBVAPrincipal")
                     .resizable()
+                    .aspectRatio(contentMode: .fit)
                     .cornerRadius(20)
                 
-                Spacer()
-                NavigationLink("REGISTRAR CLIENTE") {
-                    RegistrarClienteView()
-                }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color("ColorBotones"))
-                .cornerRadius(10)
-                .padding()
-                
-                NavigationLink("REGISTRAR CUENTA") {
-                    RegistrarCuentaView()
-                }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color("ColorBotones"))
-                .cornerRadius(10)
-                .padding()
-                
-                
-                NavigationLink("REALIZAR OPERACION") {
+                ScrollView{
+                    Spacer()
+                    NavigationLink("REGISTRAR CLIENTE") {
+                        RegistrarClienteView()
+                    }
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color("ColorBotones"))
+                    .cornerRadius(10)
+                    .padding()
                     
-                }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color("ColorBotones"))
-                .cornerRadius(10)
-                .padding()
-                
-                
-                NavigationLink("VER MOVIMIENTO") {
+                    NavigationLink("REGISTRAR CUENTA") {
+                        RegistrarCuentaView()
+                    }
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color("ColorBotones"))
+                    .cornerRadius(10)
+                    .padding()
                     
-                }
-                .padding()
-                .foregroundColor(Color.white)
-                .background(Color("ColorBotones"))
-                .cornerRadius(10)
-                .padding()
-                
-                HStack{
+                    NavigationLink("REALIZAR MOVIMIENTO") {
+                        RealizarMovimientoView()
+                    }
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color("ColorBotones"))
+                    .cornerRadius(10)
+                    .padding()
+                    
+                    NavigationLink("VER MOVIMIENTO") {
+                        VerMovimientosView()
+                    }
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .background(Color("ColorBotones"))
+                    .cornerRadius(10)
+                    .padding()
+                    
                     NavigationLink("VER CLIENTES") {
                         VerClientesView()
                     }
@@ -89,7 +87,6 @@ struct MenuPrincipalView: View{
 }
 
 struct RegistrarView_Previews: PreviewProvider{
-    
     static var previews: some View{
         MenuPrincipalView()
     }

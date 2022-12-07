@@ -12,7 +12,7 @@ struct RegistrarCuentaView: View{
     @State private var numeroDeCuenta: String = ""
     @State private var tipoDeCuenta: String = ""
     @State private var moneda: String = ""
-    @State private var saldoActual: String = ""
+    //@State private var saldoActual: String = ""
     @State private var DNI: String = ""
     let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
     
@@ -35,7 +35,7 @@ struct RegistrarCuentaView: View{
                 Text("Numero de Cuenta:")
                 TextField("Ejm 16756400004530", text: $numeroDeCuenta)
                     .keyboardType(.numberPad)
-
+                
             }
             .padding()
             .background(Color.white)
@@ -59,15 +59,6 @@ struct RegistrarCuentaView: View{
             .cornerRadius(10)
             
             HStack{
-                Text("Saldo Actual:")
-                TextField("********", text: $saldoActual)
-                    .keyboardType(.numberPad)
-            }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            
-            HStack{
                 Text("DNI:")
                 TextField("Ejm 7****5", text: $DNI)
                     .keyboardType(.numberPad)
@@ -78,7 +69,7 @@ struct RegistrarCuentaView: View{
             
             Button {
                 Task{
-                    await registrarCuentaViewModel.crearCuenta(cuenta: numeroDeCuenta, tipo: tipoDeCuenta, moneda: moneda, saldo: saldoActual, dni: Int(DNI)!)
+                    await registrarCuentaViewModel.crearCuenta(cuenta: Int(numeroDeCuenta)!, tipo: tipoDeCuenta, moneda: moneda, dni: Int(DNI)!)
                 }
             } label: {
                 Text("REGISTRAR")

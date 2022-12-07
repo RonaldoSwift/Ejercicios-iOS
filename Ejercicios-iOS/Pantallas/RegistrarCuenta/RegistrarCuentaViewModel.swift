@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+
 class RegistrarCuentaViewModel{
     
     let persistenContainer : NSPersistentContainer
@@ -20,21 +21,22 @@ class RegistrarCuentaViewModel{
         }
     }
     
-    func crearCuenta(cuenta: String, tipo: String, moneda: String, saldo: String, dni: Int) async {
+    func crearCuenta(cuenta: Int, tipo: String, moneda: String, dni: Int) async {
         do{
+            var saldo : Double = 0.0
             try crear(cuenta: cuenta, tipo: tipo, moneda: moneda, saldo: saldo, dni: dni)
         } catch{
         }
     }
     
     //throws -> try
-    private func crear(cuenta: String, tipo: String, moneda: String, saldo: String, dni: Int) throws -> (){
+    private func crear(cuenta: Int, tipo: String, moneda: String, saldo: Double, dni: Int) throws -> (){
         let cuentaEntity = CuentaEntity(context: persistenContainer.viewContext)
         cuentaEntity.id = 1
-        cuentaEntity.numerocuenta = cuenta
+        cuentaEntity.numerocuenta = Int64(cuenta)
         cuentaEntity.tipocuenta = tipo
         cuentaEntity.moneda = moneda
-        cuentaEntity.saldo = saldo
+        cuentaEntity.saldo = Int64(saldo)
         cuentaEntity.dni = Int64(dni)
         saveContext()
     }

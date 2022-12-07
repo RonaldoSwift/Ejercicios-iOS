@@ -11,22 +11,26 @@ import SwiftUI
 struct VerClientesView : View{
     
     let verClientesViewModel : VerClientesViewModel = VerClientesViewModel()
-    
-    @State private var listaString : [String] = []
-    @State private var mensaje : String = "Holamundo"
+    @State private var listaString : [Cliente] = []
     
     var body: some View{
-        ScrollView{
+        if #available(iOS 16.0, *) {
             List{
-                ForEach(listaString, id: \.self){ (stringe: String) in
-                    Text(stringe)
+                ForEach(listaString, id: \.id){ (cliente: Cliente) in
+                    Section{
+                        Text("DNI: \(cliente.dni) \nNombre De Cliente: \(cliente.nombre) \nDireccion: \(cliente.distrito)")
+                    }
                 }
+            } .task {
+                let nombreDeClientes = await verClientesViewModel.obtenrTodosLosClientes()
+                listaString = nombreDeClientes
             }
-        }.task {
-            let nombreDeClientes = await verClientesViewModel.obtenrTodosLosClientes()
-            listaString = nombreDeClientes
+            .background(Color("BlueFondo"))
+            .scrollContentBackground(.hidden)
+            .navigationTitle("Reporte Cliente")
+        } else {
+            // Fallback on earlier versions
         }
-        
     }
 }
 

@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import SwiftUI
 
 class VerCuentasViewModel{
     
@@ -16,12 +17,12 @@ class VerCuentasViewModel{
         self.persistenContainer = NSPersistentContainer(name: "Ejercicios_iOS")
         self.persistenContainer.loadPersistentStores {(description: NSPersistentStoreDescription , error: Error?) in
             if error != nil {
-                fatalError("No se pudo caragr la base de datos")
+                fatalError("No se pudo cargar la base de datos")
             }
         }
     }
     
-    func obtenerTodasLasCuentas() async -> [String]{
+    func obtenerTodasLasCuentas() async -> [Cuenta]{
         do{
             let cuentas = try getAll()
             return cuentas
@@ -30,10 +31,14 @@ class VerCuentasViewModel{
         }
     }
     
-    private func getAll() throws -> [String]{
+    private func getAll() throws -> [Cuenta]{
         let request = CuentaEntity.fetchRequest()
         return try persistenContainer.viewContext.fetch(request).map({ (cuentaEntity : CuentaEntity)in
-            cuentaEntity.numerocuenta!
+            Cuenta(numero: Int(cuentaEntity.numerocuenta),
+                   tipo: cuentaEntity.tipocuenta ?? "Error!!! No se registro el tipo de cuenta",
+                   moneda: cuentaEntity.moneda ?? "Error!!! No se registro el tipo de moneda",
+                   saldoActual: Double(cuentaEntity.saldo),
+                   dni: Int(cuentaEntity.dni))
         })
     }
     

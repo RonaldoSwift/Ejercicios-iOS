@@ -10,18 +10,27 @@ import SwiftUI
 
 struct VerCuentaView : View {
     let verCuentasViewModel : VerCuentasViewModel = VerCuentasViewModel()
-    @State private var cuentaString : [String] = []
+    @State private var cuentaString : [Cuenta] = []
     
     var body: some View{
-        ScrollView{
+        if #available(iOS 16.0, *) {
             List{
-                ForEach(cuentaString, id: \.self){(stringe: String)in
-                    Text(stringe)
+                ForEach(cuentaString, id: \.id){(cuenta: Cuenta)in
+                    Section{
+                        Text("Numero De Cuenta: \(cuenta.numero) \nTipo De Cuenta \(cuenta.tipo) \nMoneda: \(cuenta.saldoActual) \nDNI: \(cuenta.dni)")
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                    }
                 }
+            }.task {
+                let numeroDeCuentas = await verCuentasViewModel.obtenerTodasLasCuentas()
+                cuentaString = numeroDeCuentas
             }
-        }.task {
-            let numeroDeCuentas = await verCuentasViewModel.obtenerTodasLasCuentas()
-            cuentaString = numeroDeCuentas
+            .background(Color("BlueFondo"))
+            .scrollContentBackground(.hidden)
+            .navigationTitle("Reporte Cliente")
+        } else {
+            // Fallback on earlier versions
         }
     }
 }

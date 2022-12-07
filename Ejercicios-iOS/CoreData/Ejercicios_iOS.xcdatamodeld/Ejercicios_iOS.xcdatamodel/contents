@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="19574" systemVersion="21F79" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="21512" systemVersion="22A400" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
     <entity name="ClienteEntity" representedClassName="ClienteEntity" syncable="YES" codeGenerationType="class">
         <attribute name="direccion" optional="YES" attributeType="String"/>
         <attribute name="distrito" optional="YES" attributeType="String"/>
@@ -11,12 +11,18 @@
         <attribute name="dni" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="moneda" optional="YES" attributeType="String"/>
-        <attribute name="numerocuenta" optional="YES" attributeType="String"/>
-        <attribute name="saldo" optional="YES" attributeType="String"/>
+        <attribute name="numerocuenta" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="saldo" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="tipocuenta" optional="YES" attributeType="String"/>
     </entity>
-    <elements>
-        <element name="ClienteEntity" positionX="-63" positionY="-18" width="128" height="104"/>
-        <element name="CuentaEntity" positionX="-63" positionY="18" width="128" height="119"/>
-    </elements>
+    <entity name="MovimientoEntity" representedClassName="MovimientoEntity" syncable="YES" codeGenerationType="class">
+        <attribute name="cuenta" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="descripcion" optional="YES" attributeType="String"/>
+        <attribute name="fecha" optional="YES" attributeType="String"/>
+        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="importe" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="numerooperacion" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="saldo" optional="YES" attributeType="Double" defaultValueString="0.0" usesScalarValueType="YES"/>
+        <attribute name="tipooperacion" optional="YES" attributeType="String"/>
+    </entity>
 </model>
