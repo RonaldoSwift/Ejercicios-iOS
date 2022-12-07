@@ -14,6 +14,11 @@ struct RegistrarCuentaView: View{
     @State private var moneda: String = ""
     //@State private var saldoActual: String = ""
     @State private var DNI: String = ""
+    
+    @State private var selection: Int = 1
+    @State private var selection2: Int = 1
+    
+    
     let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
     
     var body: some View{
@@ -24,9 +29,9 @@ struct RegistrarCuentaView: View{
             Text("REGISTRAR CUENTA")
                 .font(.title2)
                 .foregroundColor(Color.white)
-            Image(systemName: "person.text.rectangle.fill")
+            Image("Tarjet")
                 .resizable()
-                .foregroundColor(Color.white)
+                .scaledToFit()
                 .padding()
             
             Spacer()
@@ -44,7 +49,12 @@ struct RegistrarCuentaView: View{
             
             HStack{
                 Text("Tipo de Cuenta:")
-                TextField("Corriente/Bancaria", text: $tipoDeCuenta)
+                Spacer()
+                Picker(selection: $selection, label: Text("Seleccion")) {
+                    Text("Corriente").tag(1)
+                    Text("Sueldo").tag(2)
+                    Text("Ahorro").tag(3)
+                }
             }
             .padding()
             .background(Color.white)
@@ -52,7 +62,11 @@ struct RegistrarCuentaView: View{
             
             HStack{
                 Text("Moneda:")
-                TextField("Soles/Dolares", text: $moneda)
+                Spacer()
+                Picker(selection: $selection2, label: Text("Seleccion")) {
+                    Text("Soles").tag(1)
+                    Text("Dolares").tag(2)
+                }
             }
             .padding()
             .background(Color.white)
@@ -69,7 +83,7 @@ struct RegistrarCuentaView: View{
             
             Button {
                 Task{
-                    await registrarCuentaViewModel.crearCuenta(cuenta: Int(numeroDeCuenta)!, tipo: tipoDeCuenta, moneda: moneda, dni: Int(DNI)!)
+                    await registrarCuentaViewModel.crearCuenta(cuenta: Int(numeroDeCuenta)!, selection: selection, selection2: selection2, tipo: tipoDeCuenta, moneda: moneda, dni: Int(DNI)!)
                 }
             } label: {
                 Text("REGISTRAR")

@@ -21,9 +21,31 @@ class RegistrarCuentaViewModel{
         }
     }
     
-    func crearCuenta(cuenta: Int, tipo: String, moneda: String, dni: Int) async {
+    func crearCuenta(cuenta: Int,selection: Int, selection2: Int ,tipo: String, moneda: String, dni: Int) async {
         do{
-            var saldo : Double = 0.0
+            let saldo : Double = 0.0
+            //
+            var tipo: String = ""
+            
+            if(selection == 1){
+                tipo = "Corriente"
+            }
+            else if(selection == 2){
+                tipo = "Sueldo"
+            }
+            else{
+                tipo = "Ahorros"
+            }
+            //
+            var moneda: String = ""
+            
+            if(selection2 == 1){
+                moneda = "Soles"
+            }
+            else{
+                moneda = "Dolares"
+            }
+            
             try crear(cuenta: cuenta, tipo: tipo, moneda: moneda, saldo: saldo, dni: dni)
         } catch{
         }

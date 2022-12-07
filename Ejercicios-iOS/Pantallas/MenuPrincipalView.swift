@@ -29,6 +29,7 @@ struct MenuPrincipalView: View{
                     }
                     .padding()
                     .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()
@@ -38,6 +39,7 @@ struct MenuPrincipalView: View{
                     }
                     .padding()
                     .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()
@@ -47,6 +49,7 @@ struct MenuPrincipalView: View{
                     }
                     .padding()
                     .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()
@@ -56,6 +59,7 @@ struct MenuPrincipalView: View{
                     }
                     .padding()
                     .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()
@@ -65,6 +69,7 @@ struct MenuPrincipalView: View{
                     }
                     .padding()
                     .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()
@@ -74,6 +79,7 @@ struct MenuPrincipalView: View{
                     }
                     .padding()
                     .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()

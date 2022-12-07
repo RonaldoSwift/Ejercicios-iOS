@@ -28,10 +28,10 @@ struct RegistrarClienteView: View{
                 .background(Color("ColorBotones"))
                 .cornerRadius(10)
             
-            Image(systemName: "person.fill.badge.plus")
+            Image("Person")
                 .resizable()
+                .scaledToFit()
                 .padding()
-                .foregroundColor(Color.white)
             
             Spacer()
             HStack{

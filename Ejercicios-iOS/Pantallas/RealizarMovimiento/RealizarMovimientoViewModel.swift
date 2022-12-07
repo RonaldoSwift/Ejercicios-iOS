@@ -24,18 +24,20 @@ class RealizarMovimientoViewModel{
     
     func crearMovimiento(descripcion: String, selection: Int, importe: Double) async{
         do{
-            var numeroDeCuenta : Int = 0
+            let numeroDeCuenta : Int = 0
             
             //OBTENER FECHA
-            var fechaOperacion : Date = Date()
-            var formatoFecha = DateFormatter()
+            let fechaOperacion : Date = Date()
+            let formatoFecha = DateFormatter()
             formatoFecha.dateStyle = .full
             formatoFecha.timeStyle = .none
-            var fechaQueSeMuestra = formatoFecha.string(from: fechaOperacion)
+            let fechaQueSeMuestra = formatoFecha.string(from: fechaOperacion)
             
             
-            var numeroOperacion = Int.random(in: 1..<100)
-            var saldo : Double = 0.0
+            let numeroOperacion = Int.random(in: 1..<100)
+            
+            let saldo : Double = 0.0
+            
             
             var tipoOperacion : String = ""
             if(selection == 1){

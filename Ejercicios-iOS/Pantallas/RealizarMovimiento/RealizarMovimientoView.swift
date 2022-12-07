@@ -20,6 +20,7 @@ struct RealizarMovimientoView: View{
             Text("MOVIMIENTO")
             Image("Movimiento")
                 .resizable()
+                .scaledToFit()
                 .aspectRatio(contentMode: .fit)
                 .cornerRadius(20)
             
