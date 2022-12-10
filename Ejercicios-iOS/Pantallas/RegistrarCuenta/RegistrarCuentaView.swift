@@ -20,9 +20,14 @@ struct RegistrarCuentaView: View{
     
     
     let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
+    @EnvironmentObject var sharedViewModel : SharedViewModel
+
     
     var body: some View{
         VStack{
+            
+            Text(sharedViewModel.dni)
+            
             Text("BBVA")
                 .font(.title2)
                 .foregroundColor(Color.white)

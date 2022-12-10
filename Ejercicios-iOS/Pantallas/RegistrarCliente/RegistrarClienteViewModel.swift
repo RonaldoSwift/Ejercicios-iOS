@@ -7,7 +7,7 @@
 
 import Foundation
 import CoreData
-class RegistrarClienteViewModel{
+class RegistrarClienteViewModel: ObservableObject{
     
     let persistenContainer : NSPersistentContainer
     

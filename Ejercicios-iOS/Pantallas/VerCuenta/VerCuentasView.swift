@@ -28,7 +28,7 @@ struct VerCuentaView : View {
             }
             .background(Color("BlueFondo"))
             .scrollContentBackground(.hidden)
-            .navigationTitle("Reporte Cliente")
+            .navigationTitle("Reporte Cuenta")
         } else {
             // Fallback on earlier versions
         }
