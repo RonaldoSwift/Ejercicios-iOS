@@ -12,6 +12,7 @@ class RegistrarCuentaViewModel{
     
     let persistenContainer : NSPersistentContainer
     
+    
     init(){
         self.persistenContainer = NSPersistentContainer(name: "Ejercicios_iOS")
         self.persistenContainer.loadPersistentStores { (description: NSPersistentStoreDescription, error: Error?) in
@@ -21,42 +22,44 @@ class RegistrarCuentaViewModel{
         }
     }
     
-    func crearCuenta(cuenta: Int,selection: Int, selection2: Int ,tipo: String, moneda: String, dni: Int) async {
+    func crearCuenta(tipoDeCuentaSelection: Int, monedaSelection: Int, saldo: Double, dni:Int) async {
         do{
-            let saldo : Double = 0.0
-            //
-            var tipo: String = ""
+            let numeroDeCuenta = Int.random(in: 1000000..<2000000)
+            var tipoDeCuenta: String = ""
+            var moneda: String = ""
+            let saldo : Double = saldo
+            let dni: Int = dni
             
-            if(selection == 1){
-                tipo = "Corriente"
+            
+            if(tipoDeCuentaSelection == 1){
+                tipoDeCuenta = "Corriente"
             }
-            else if(selection == 2){
-                tipo = "Sueldo"
+            else if(tipoDeCuentaSelection == 2){
+                tipoDeCuenta = "Sueldo"
             }
             else{
-                tipo = "Ahorros"
+                tipoDeCuenta = "Ahorros"
             }
-            //
-            var moneda: String = ""
             
-            if(selection2 == 1){
+            
+            if(monedaSelection == 1){
                 moneda = "Soles"
             }
             else{
                 moneda = "Dolares"
             }
             
-            try crear(cuenta: cuenta, tipo: tipo, moneda: moneda, saldo: saldo, dni: dni)
+            try crear(numeroDeCuenta: numeroDeCuenta, tipoDeCuenta: tipoDeCuenta, moneda: moneda, saldo: saldo, dni: dni)
         } catch{
         }
     }
     
     //throws -> try
-    private func crear(cuenta: Int, tipo: String, moneda: String, saldo: Double, dni: Int) throws -> (){
+    private func crear(numeroDeCuenta: Int, tipoDeCuenta: String, moneda: String, saldo: Double, dni: Int) throws -> (){
         let cuentaEntity = CuentaEntity(context: persistenContainer.viewContext)
-        cuentaEntity.id = 1
-        cuentaEntity.numerocuenta = Int64(cuenta)
-        cuentaEntity.tipocuenta = tipo
+        cuentaEntity.id = Int64(Int.random(in: 1..<100))
+        cuentaEntity.numerocuenta = Int64(numeroDeCuenta)
+        cuentaEntity.tipocuenta = tipoDeCuenta
         cuentaEntity.moneda = moneda
         cuentaEntity.saldo = Int64(saldo)
         cuentaEntity.dni = Int64(dni)

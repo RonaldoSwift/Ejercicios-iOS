@@ -30,7 +30,7 @@ class RegistrarClienteViewModel: ObservableObject{
     
     private func crear(dni:Int, nombreCliente:String, direccion:String, distrito:String) throws -> (){
         let clienteEntity = ClienteEntity(context: persistenContainer.viewContext)
-        clienteEntity.id = 1
+        clienteEntity.id = Int64(Int.random(in: 1..<100))
         clienteEntity.dni = Int64(dni)
         clienteEntity.nombre = nombreCliente
         clienteEntity.direccion = direccion

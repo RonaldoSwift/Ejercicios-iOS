@@ -17,6 +17,7 @@ struct RegistrarClienteView: View{
     let registrarClienteViewModel : RegistrarClienteViewModel = RegistrarClienteViewModel()
     @EnvironmentObject var sharedViewModel : SharedViewModel
     
+    
     var body: some View{
         VStack{
             Text("BBVA")
@@ -70,9 +71,9 @@ struct RegistrarClienteView: View{
             
             Button("REGISTRAR"){
                 sharedViewModel.guardarDni(dni: ingresoDNI)
-//                Task{
-//                    await registrarClienteViewModel.crearCliente(dni: Int(ingresoDNI)!, nombreCliente: ingreseNombre, direccion: ingreseDireccion, distrito: ingreseDistrito)
-//                }
+                Task{
+                    await registrarClienteViewModel.crearCliente(dni: Int(ingresoDNI)!, nombreCliente: ingreseNombre, direccion: ingreseDireccion, distrito: ingreseDistrito)
+                }
             }
             .padding()
             .foregroundColor(Color.white)

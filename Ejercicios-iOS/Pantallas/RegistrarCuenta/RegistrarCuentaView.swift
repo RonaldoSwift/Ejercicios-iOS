@@ -9,14 +9,11 @@ import Foundation
 import SwiftUI
 
 struct RegistrarCuentaView: View{
-    @State private var numeroDeCuenta: String = ""
-    @State private var tipoDeCuenta: String = ""
-    @State private var moneda: String = ""
     //@State private var saldoActual: String = ""
-    @State private var DNI: String = ""
     
-    @State private var selection: Int = 1
-    @State private var selection2: Int = 1
+    @State private var tipoDeCuentaSelection: Int = 1
+    @State private var monedaSelection: Int = 1
+    @State private var saldo: String = "0"
     
     
     let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
@@ -25,8 +22,6 @@ struct RegistrarCuentaView: View{
     
     var body: some View{
         VStack{
-            
-            Text(sharedViewModel.dni)
             
             Text("BBVA")
                 .font(.title2)
@@ -42,20 +37,9 @@ struct RegistrarCuentaView: View{
             Spacer()
             
             HStack{
-                Text("Numero de Cuenta:")
-                TextField("Ejm 16756400004530", text: $numeroDeCuenta)
-                    .keyboardType(.numberPad)
-                
-            }
-            .padding()
-            .background(Color.white)
-            .cornerRadius(10)
-            
-            
-            HStack{
                 Text("Tipo de Cuenta:")
                 Spacer()
-                Picker(selection: $selection, label: Text("Seleccion")) {
+                Picker(selection: $tipoDeCuentaSelection, label: Text("Seleccion")) {
                     Text("Corriente").tag(1)
                     Text("Sueldo").tag(2)
                     Text("Ahorro").tag(3)
@@ -68,7 +52,7 @@ struct RegistrarCuentaView: View{
             HStack{
                 Text("Moneda:")
                 Spacer()
-                Picker(selection: $selection2, label: Text("Seleccion")) {
+                Picker(selection: $monedaSelection, label: Text("Seleccion")) {
                     Text("Soles").tag(1)
                     Text("Dolares").tag(2)
                 }
@@ -77,10 +61,12 @@ struct RegistrarCuentaView: View{
             .background(Color.white)
             .cornerRadius(10)
             
+            
             HStack{
-                Text("DNI:")
-                TextField("Ejm 7****5", text: $DNI)
+                Text("Coloque el saldo: ")
+                TextField("*****", text: $saldo)
                     .keyboardType(.numberPad)
+                
             }
             .padding()
             .background(Color.white)
@@ -88,7 +74,7 @@ struct RegistrarCuentaView: View{
             
             Button {
                 Task{
-                    await registrarCuentaViewModel.crearCuenta(cuenta: Int(numeroDeCuenta)!, selection: selection, selection2: selection2, tipo: tipoDeCuenta, moneda: moneda, dni: Int(DNI)!)
+                    await registrarCuentaViewModel.crearCuenta(tipoDeCuentaSelection: tipoDeCuentaSelection, monedaSelection: monedaSelection, saldo: Double(saldo)!, dni: Int(sharedViewModel.dni)!)
                 }
             } label: {
                 Text("REGISTRAR")
