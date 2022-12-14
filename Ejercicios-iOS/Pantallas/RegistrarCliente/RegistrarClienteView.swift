@@ -14,11 +14,20 @@ struct RegistrarClienteView: View{
     @State private var ingreseNombre: String = ""
     @State private var ingreseDireccion: String = ""
     @State private var ingreseDistrito: String = ""
+    //    Alert
+    @State private var showingAlert = false
+    
     let registrarClienteViewModel : RegistrarClienteViewModel = RegistrarClienteViewModel()
     @EnvironmentObject var sharedViewModel : SharedViewModel
     
     
     var body: some View{
+        
+        let valueProxy = Binding<String>(
+            get: { ingresoDNI },
+            set: { ingresoDNI = String($0.prefix(8)) }
+        )
+        
         VStack{
             Text("BBVA")
                 .font(.title)
@@ -38,7 +47,8 @@ struct RegistrarClienteView: View{
             Spacer()
             HStack{
                 Text("Ingrese DNI:")
-                TextField("DNI", text: $ingresoDNI )
+                TextField("DNI", text: valueProxy )
+                    .textFieldStyle(RoundedBorderTextFieldStyle())
                     .keyboardType(.numberPad)
             }
             .padding()
@@ -74,11 +84,15 @@ struct RegistrarClienteView: View{
                 Task{
                     await registrarClienteViewModel.crearCliente(dni: Int(ingresoDNI)!, nombreCliente: ingreseNombre, direccion: ingreseDireccion, distrito: ingreseDistrito)
                 }
+                showingAlert = true
+            }
+            .alert("Cliente Ingresado", isPresented: $showingAlert) {
+                Button("OK", role: .cancel) { }
             }
             .padding()
-            .foregroundColor(Color.white)
-            .background(Color("ColorBotones"))
-            .cornerRadius(20)
+                .foregroundColor(Color.white)
+                .background(Color("ColorBotones"))
+                .cornerRadius(20)
             
         }
         .padding()

@@ -12,6 +12,7 @@ struct RealizarMovimientoView: View{
     @State private var descripcion: String = ""
     @State private var importe: String = ""
     @State private var selection: Int = 1
+    @State private var showingAlert = false
     
     let realizarMovimientoViewModel : RealizarMovimientoViewModel = RealizarMovimientoViewModel()
     @EnvironmentObject var shareViewModel : SharedViewModel
@@ -29,6 +30,8 @@ struct RealizarMovimientoView: View{
             HStack{
                 Text("Importe: ")
                 TextField("0.0", text: $importe)
+                    .keyboardType(.numberPad)
+                
             }
             .padding()
             .background(Color.white)
@@ -59,6 +62,8 @@ struct RealizarMovimientoView: View{
                 Task{
                     await realizarMovimientoViewModel.crearMovimiento(descripcion: descripcion, selection:selection, importe:Double(importe)!, numeroDeCuenta: shareViewModel.numeroDeCuenta, saldoActual: shareViewModel.saldoActual)
                 }
+                showingAlert = true
+
             } label: {
                 Text("Realizar Movimiento")
                     .padding()
@@ -66,7 +71,9 @@ struct RealizarMovimientoView: View{
                     .background(Color("ColorBotones"))
                     .cornerRadius(20)
             }
-            
+            .alert("Movimiento Ingresado", isPresented: $showingAlert) {
+                Button("OK", role: .cancel) { }
+            }
         }
         .padding()
         .background(Color("BlueFondo"))

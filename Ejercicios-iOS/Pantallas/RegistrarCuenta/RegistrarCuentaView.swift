@@ -15,6 +15,9 @@ struct RegistrarCuentaView: View{
     @State private var monedaSelection: Int = 1
     @State private var saldo: String = "0"
     
+    @State private var showingAlert = false
+    
+    
     
     let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
     @EnvironmentObject var sharedViewModel : SharedViewModel
@@ -80,12 +83,17 @@ struct RegistrarCuentaView: View{
                 Task{
                     await registrarCuentaViewModel.crearCuenta(tipoDeCuentaSelection: tipoDeCuentaSelection, monedaSelection: monedaSelection, saldo: Double(saldo)!, dni: sharedViewModel.dni)
                 }
+                //Alert
+                showingAlert = true
             } label: {
                 Text("REGISTRAR")
                     .padding()
                     .foregroundColor(Color.white)
                     .background(Color("ColorBotones"))
                     .cornerRadius(20)
+            }
+            .alert("Cuenta Ingresada", isPresented: $showingAlert) {
+                Button("OK", role: .cancel) { }
             }
         }
         .padding()
