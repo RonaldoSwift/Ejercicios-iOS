@@ -14,6 +14,7 @@ struct RealizarMovimientoView: View{
     @State private var selection: Int = 1
     
     let realizarMovimientoViewModel : RealizarMovimientoViewModel = RealizarMovimientoViewModel()
+    @EnvironmentObject var shareViewModel : SharedViewModel
     
     var body: some View{
         VStack{
@@ -25,10 +26,9 @@ struct RealizarMovimientoView: View{
                 .cornerRadius(20)
             
             Spacer()
-            
             HStack{
-                Text("Descripcion:")
-                TextField("efectivo/cheque/visanet/cajero", text: $descripcion)
+                Text("Importe: ")
+                TextField("0.0", text: $importe)
             }
             .padding()
             .background(Color.white)
@@ -47,16 +47,17 @@ struct RealizarMovimientoView: View{
             .cornerRadius(10)
             
             HStack{
-                Text("Importe: ")
-                TextField("0.0", text: $importe)
+                Text("Descripcion:")
+                TextField("efectivo/cheque/visanet/cajero", text: $descripcion)
             }
             .padding()
             .background(Color.white)
             .cornerRadius(10)
             
             Button {
+                
                 Task{
-                    await realizarMovimientoViewModel.crearMovimiento(descripcion: descripcion, selection:selection, importe:Double(importe)!)
+                    await realizarMovimientoViewModel.crearMovimiento(descripcion: descripcion, selection:selection, importe:Double(importe)!, numeroDeCuenta: shareViewModel.numeroDeCuenta, saldoActual: shareViewModel.saldoActual)
                 }
             } label: {
                 Text("Realizar Movimiento")

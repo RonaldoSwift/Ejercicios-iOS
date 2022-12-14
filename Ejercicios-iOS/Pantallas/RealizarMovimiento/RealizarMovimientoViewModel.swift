@@ -22,10 +22,9 @@ class RealizarMovimientoViewModel{
     }
     
     
-    func crearMovimiento(descripcion: String, selection: Int, importe: Double) async{
+    func crearMovimiento(descripcion: String, selection: Int, importe: Double, numeroDeCuenta: Int, saldoActual:Double) async{
+        
         do{
-            let numeroDeCuenta : Int = 0
-            
             //OBTENER FECHA
             let fechaOperacion : Date = Date()
             let formatoFecha = DateFormatter()
@@ -36,8 +35,15 @@ class RealizarMovimientoViewModel{
             
             let numeroOperacion = Int.random(in: 1..<100)
             
-            let saldo : Double = 0.0
+            var saldo : Double = 0
             
+            if(importe >= 10){
+                
+                saldo = saldoActual + importe
+            }
+            else{
+                saldo = saldoActual - importe
+            }
             
             var tipoOperacion : String = ""
             if(selection == 1){

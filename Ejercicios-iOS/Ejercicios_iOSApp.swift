@@ -11,8 +11,7 @@ import SwiftUI
 struct Ejercicios_iOSApp: App {
     
     var sharedViewModel : SharedViewModel = SharedViewModel()
-
-
+    
     var body: some Scene {
         WindowGroup {
             MenuPrincipalView()

@@ -9,25 +9,19 @@ import Foundation
 
 class SharedViewModel: ObservableObject {
     
-    @Published var dni: String = ""
-    @Published var nombre: String = ""
-    @Published var direccion: String = ""
-    @Published var distrito: String = ""
+    @Published var dni: Int = 0
+    @Published var numeroDeCuenta: Int = 0
+    @Published var saldoActual: Double = 0
     
-    func guardarDni(dni: String) {
+    func guardarDni(dni: Int) {
         self.dni = dni
     }
     
-    func guardarNombre(nombre: String){
-        self.nombre = nombre
+    func guardarNumeroDeCuenta(numeroDeCuenta:Int){
+        self.numeroDeCuenta = numeroDeCuenta
     }
     
-    func guardarDireccion(direccion: String){
-        self.direccion = direccion
+    func guardarSaldoActual(saldoActual: Double){
+        self.saldoActual = saldoActual
     }
-    
-    func guardarDistrito(distrito: String){
-        self.distrito = distrito
-    }
-    
 }

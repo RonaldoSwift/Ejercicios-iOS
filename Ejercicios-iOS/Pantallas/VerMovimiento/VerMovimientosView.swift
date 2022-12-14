@@ -19,7 +19,7 @@ struct VerMovimientosView : View {
             List{
                 ForEach(movimientos, id: \.id){ (movimiento: Movimiento) in
                     Section{
-                        Text("Movimiento: \(movimiento.numeroDeCuenta) \nFecha De Operacion: \(movimiento.fechaDeOperacion) \nDescripcion: \(movimiento.descripcion) \nNumero De Operacion: \(movimiento.numeroDeOperacion) \nTipo De Operacion: \(movimiento.importe) \nImporte: \(movimiento.importe) \nSaldoContable \(movimiento.saldoContable)")
+                        Text("Numero De Cuenta: \(movimiento.numeroDeCuenta) \nFecha De Operacion: \(movimiento.fechaDeOperacion) \nDescripcion: \(movimiento.descripcion) \nNumero De Operacion: \(movimiento.numeroDeOperacion) \nTipo De Operacion: \(movimiento.importe) \nImporte: \(movimiento.importe) \nSaldoContable \(movimiento.saldoContable)")
                             .foregroundColor(Color.black)
                             .background(Color.white)
                     }

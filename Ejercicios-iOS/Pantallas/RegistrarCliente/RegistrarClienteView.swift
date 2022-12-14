@@ -70,7 +70,7 @@ struct RegistrarClienteView: View{
             .cornerRadius(10)
             
             Button("REGISTRAR"){
-                sharedViewModel.guardarDni(dni: ingresoDNI)
+                sharedViewModel.guardarDni(dni: Int(ingresoDNI)!)
                 Task{
                     await registrarClienteViewModel.crearCliente(dni: Int(ingresoDNI)!, nombreCliente: ingreseNombre, direccion: ingreseDireccion, distrito: ingreseDistrito)
                 }

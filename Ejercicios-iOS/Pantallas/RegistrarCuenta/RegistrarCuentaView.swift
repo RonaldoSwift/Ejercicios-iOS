@@ -18,7 +18,7 @@ struct RegistrarCuentaView: View{
     
     let registrarCuentaViewModel : RegistrarCuentaViewModel = RegistrarCuentaViewModel()
     @EnvironmentObject var sharedViewModel : SharedViewModel
-
+    
     
     var body: some View{
         VStack{
@@ -73,8 +73,12 @@ struct RegistrarCuentaView: View{
             .cornerRadius(10)
             
             Button {
+                sharedViewModel.guardarNumeroDeCuenta(
+                    numeroDeCuenta: registrarCuentaViewModel.numeroDeCuenta
+                )
+                
                 Task{
-                    await registrarCuentaViewModel.crearCuenta(tipoDeCuentaSelection: tipoDeCuentaSelection, monedaSelection: monedaSelection, saldo: Double(saldo)!, dni: Int(sharedViewModel.dni)!)
+                    await registrarCuentaViewModel.crearCuenta(tipoDeCuentaSelection: tipoDeCuentaSelection, monedaSelection: monedaSelection, saldo: Double(saldo)!, dni: sharedViewModel.dni)
                 }
             } label: {
                 Text("REGISTRAR")

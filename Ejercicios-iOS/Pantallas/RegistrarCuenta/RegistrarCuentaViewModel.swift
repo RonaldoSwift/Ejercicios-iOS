@@ -11,6 +11,7 @@ import CoreData
 class RegistrarCuentaViewModel{
     
     let persistenContainer : NSPersistentContainer
+    let numeroDeCuenta = Int.random(in: 1000000..<2000000)
     
     
     init(){
@@ -24,7 +25,6 @@ class RegistrarCuentaViewModel{
     
     func crearCuenta(tipoDeCuentaSelection: Int, monedaSelection: Int, saldo: Double, dni:Int) async {
         do{
-            let numeroDeCuenta = Int.random(in: 1000000..<2000000)
             var tipoDeCuenta: String = ""
             var moneda: String = ""
             let saldo : Double = saldo
