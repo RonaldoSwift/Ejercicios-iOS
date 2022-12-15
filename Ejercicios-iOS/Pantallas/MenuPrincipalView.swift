@@ -83,6 +83,16 @@ struct MenuPrincipalView: View{
                     .background(Color("ColorBotones"))
                     .cornerRadius(10)
                     .padding()
+                    
+                    NavigationLink("BUSCAR CLIENTE") {
+                        BuscarClienteView()
+                    }
+                    .padding()
+                    .foregroundColor(Color.white)
+                    .frame (maxWidth: 300)
+                    .background(Color("ColorBotones"))
+                    .cornerRadius(10)
+                    .padding()
                 }
             }
             .padding()

@@ -18,7 +18,7 @@ struct VerClientesView : View{
             List{
                 ForEach(listaString, id: \.id){ (cliente: Cliente) in
                     Section{
-                        Text("DNI: \(cliente.dni) \nNombre De Cliente: \(cliente.nombre) \nDireccion: \(cliente.distrito)")
+                        Text("ID: \(cliente.id) \nDNI: \(cliente.dni) \nNombre De Cliente: \(cliente.nombre) \nDireccion: \(cliente.direccion) Distrito: \(cliente.distrito)")
                     }
                 }
             } .task {

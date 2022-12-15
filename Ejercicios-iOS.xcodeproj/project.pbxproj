@@ -15,6 +15,8 @@
 		D1262DEC293FF09D0097A5ED /* VerMovimientosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1262DEB293FF09D0097A5ED /* VerMovimientosView.swift */; };
 		D1262DEE293FF0B20097A5ED /* VerMovimientosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1262DED293FF0B20097A5ED /* VerMovimientosViewModel.swift */; };
 		D16CB8D32944139400FD6F7E /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D16CB8D22944139400FD6F7E /* SharedViewModel.swift */; };
+		D1F9CF8A294AC8EF0061F0B2 /* BuscarClienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9CF89294AC8EF0061F0B2 /* BuscarClienteView.swift */; };
+		D1F9CF8C294ACAA40061F0B2 /* BuscarClienteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1F9CF8B294ACAA40061F0B2 /* BuscarClienteViewModel.swift */; };
 		FB06F6E3292BEB0D00041937 /* RegistrarClienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB06F6E2292BEB0C00041937 /* RegistrarClienteView.swift */; };
 		FB0F640D2927F90A002EA9B2 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB0F640C2927F90A002EA9B2 /* MenuPrincipalView.swift */; };
 		FB26F3D42936D25D00E1213C /* VerClientesView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB26F3D32936D25D00E1213C /* VerClientesView.swift */; };
@@ -59,6 +61,8 @@
 		D1262DEB293FF09D0097A5ED /* VerMovimientosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerMovimientosView.swift; sourceTree = "<group>"; };
 		D1262DED293FF0B20097A5ED /* VerMovimientosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerMovimientosViewModel.swift; sourceTree = "<group>"; };
 		D16CB8D22944139400FD6F7E /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		D1F9CF89294AC8EF0061F0B2 /* BuscarClienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarClienteView.swift; sourceTree = "<group>"; };
+		D1F9CF8B294ACAA40061F0B2 /* BuscarClienteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuscarClienteViewModel.swift; sourceTree = "<group>"; };
 		FB06F6E2292BEB0C00041937 /* RegistrarClienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarClienteView.swift; sourceTree = "<group>"; };
 		FB0F640C2927F90A002EA9B2 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
 		FB26F3D32936D25D00E1213C /* VerClientesView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerClientesView.swift; sourceTree = "<group>"; };
@@ -133,6 +137,15 @@
 			path = VerMovimiento;
 			sourceTree = "<group>";
 		};
+		D1F9CF88294AC8B90061F0B2 /* BuscarCliente */ = {
+			isa = PBXGroup;
+			children = (
+				D1F9CF89294AC8EF0061F0B2 /* BuscarClienteView.swift */,
+				D1F9CF8B294ACAA40061F0B2 /* BuscarClienteViewModel.swift */,
+			);
+			path = BuscarCliente;
+			sourceTree = "<group>";
+		};
 		FB289E4129383ADD0065363F /* VerClientes */ = {
 			isa = PBXGroup;
 			children = (
@@ -162,6 +175,7 @@
 		FB8553FB292C335F00CBBCA0 /* Pantallas */ = {
 			isa = PBXGroup;
 			children = (
+				D1F9CF88294AC8B90061F0B2 /* BuscarCliente */,
 				FB5A6656292ED5CC005787DC /* RegistrarCliente */,
 				FB289E4129383ADD0065363F /* VerClientes */,
 				FBE4D71529391EBC00D98287 /* RegistrarCuenta */,
@@ -389,6 +403,7 @@
 				D1262DE2293EB8330097A5ED /* Cuenta.swift in Sources */,
 				FB5A6655292ED055005787DC /* RegistrarClienteViewModel.swift in Sources */,
 				FBA39AD6292D3AC50049EEA4 /* RegistrarCuentaView.swift in Sources */,
+				D1F9CF8A294AC8EF0061F0B2 /* BuscarClienteView.swift in Sources */,
 				FB289E4329383B080065363F /* VerClientesViewModel.swift in Sources */,
 				D1262DEC293FF09D0097A5ED /* VerMovimientosView.swift in Sources */,
 				D1262DE4293EB84F0097A5ED /* Movimiento.swift in Sources */,
@@ -398,6 +413,7 @@
 				D1262DE0293EB8270097A5ED /* Cliente.swift in Sources */,
 				FB26F3D42936D25D00E1213C /* VerClientesView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D1F9CF8C294ACAA40061F0B2 /* BuscarClienteViewModel.swift in Sources */,
 				FBE4D7172939210900D98287 /* RegistrarCuentaViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
