@@ -23,6 +23,7 @@ struct BuscarClienteView: View {
                         let cliente =
                         await  buscarCLienteViewModel.obtenerDatosDelClientePorDNI(dni:Int(buscarDni)!)
                         datosDelCliente = "\(cliente)"
+                        
                     }
                 } label: {
                     Image("Lupa")

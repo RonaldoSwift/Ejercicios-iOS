@@ -20,7 +20,6 @@ struct RegistrarClienteView: View{
     let registrarClienteViewModel : RegistrarClienteViewModel = RegistrarClienteViewModel()
     @EnvironmentObject var sharedViewModel : SharedViewModel
     
-    
     var body: some View{
         
         let valueProxy = Binding<String>(
