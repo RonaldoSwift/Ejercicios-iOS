@@ -61,7 +61,7 @@ class RegistrarCuentaViewModel{
         cuentaEntity.numerocuenta = Int64(numeroDeCuenta)
         cuentaEntity.tipocuenta = tipoDeCuenta
         cuentaEntity.moneda = moneda
-        cuentaEntity.saldo = Int64(saldo)
+        cuentaEntity.saldo = saldo
         cuentaEntity.dni = Int64(dni)
         saveContext()
     }

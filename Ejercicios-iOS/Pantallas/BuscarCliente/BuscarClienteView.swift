@@ -10,9 +10,12 @@ import SwiftUI
 struct BuscarClienteView: View {
     @State private var buscarDni: String = ""
     @State private var datosDelCliente: String = ""
+    @State private var datosDeCuenta: String = ""
+    @State private var datosDeMovimiento: String = ""
+    
+    
     
     var buscarCLienteViewModel : BuscarClienteViewModel = BuscarClienteViewModel()
-    
     
     var body: some View {
         VStack{
@@ -24,19 +27,43 @@ struct BuscarClienteView: View {
                         await  buscarCLienteViewModel.obtenerDatosDelClientePorDNI(dni:Int(buscarDni)!)
                         datosDelCliente = "\(cliente)"
                         
+                        let cuenta = await buscarCLienteViewModel.obtenerDatosDeLaCuentaPordni(dni: cliente.dni)
+                        datosDeCuenta = "\(cuenta)"
+                        
+                        let movimientos = await buscarCLienteViewModel.obtenerDatosDelMovimientoPorNumeroDeCuenta(numeroDeCuenta: cuenta.numero)
+                        datosDeMovimiento = "\(movimientos)"
                     }
+                    
                 } label: {
                     Image("Lupa")
                         .scaledToFit()
                 }
+                
             }
             .padding()
+            .background(Color.white)
+            .cornerRadius(10)
             
-            ScrollView{
-                Text(datosDelCliente)
+            
+            List{
+                
+                if(datosDelCliente != ""){
+                    Text(datosDelCliente)
+                }
+                
+                if(datosDeCuenta != ""){
+                    Text(datosDeCuenta)
+                    
+                }
+                if(datosDeMovimiento != ""){
+                    Text(datosDeMovimiento)
+                }
             }
+            .navigationTitle("Reporte Cliente")
+            
         }
         .padding()
+        .background(Color("BlueFondo"))
     }
 }
 
