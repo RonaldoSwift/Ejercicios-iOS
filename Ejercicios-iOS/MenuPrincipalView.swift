@@ -20,8 +20,7 @@ struct MenuPrincipalView: View {
                 Image("Usuario")
                     .resizable()
                     .aspectRatio(contentMode: .fill)
-                    .frame(width: 250.0, height: 250.0, alignment: .center)
-                    .clipShape(Circle())
+                    .frame(width: 360.0, height: 250.0, alignment: .center)
                 
                 Spacer()
                 
