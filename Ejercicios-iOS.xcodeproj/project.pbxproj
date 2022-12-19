@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D12492C72950C09D0018E150 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492C62950C09D0018E150 /* MenuPrincipalView.swift */; };
+		D12492CB2950C3F30018E150 /* RegistrarUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492CA2950C3F30018E150 /* RegistrarUsuarioView.swift */; };
+		D12492CD2950C41D0018E150 /* RegistrarUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492CC2950C41D0018E150 /* RegistrarUsuarioViewModel.swift */; };
+		D12492CF2950C45A0018E150 /* VerUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492CE2950C45A0018E150 /* VerUsuarioView.swift */; };
+		D12492D12950C46B0018E150 /* VerUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -36,6 +41,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D12492C62950C09D0018E150 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		D12492CA2950C3F30018E150 /* RegistrarUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioView.swift; sourceTree = "<group>"; };
+		D12492CC2950C41D0018E150 /* RegistrarUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewModel.swift; sourceTree = "<group>"; };
+		D12492CE2950C45A0018E150 /* VerUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioView.swift; sourceTree = "<group>"; };
+		D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioViewModel.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +85,24 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D12492C82950C23E0018E150 /* Registrar */ = {
+			isa = PBXGroup;
+			children = (
+				D12492CA2950C3F30018E150 /* RegistrarUsuarioView.swift */,
+				D12492CC2950C41D0018E150 /* RegistrarUsuarioViewModel.swift */,
+			);
+			path = Registrar;
+			sourceTree = "<group>";
+		};
+		D12492C92950C3D50018E150 /* VerUsuario */ = {
+			isa = PBXGroup;
+			children = (
+				D12492CE2950C45A0018E150 /* VerUsuarioView.swift */,
+				D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */,
+			);
+			path = VerUsuario;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +126,9 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D12492C62950C09D0018E150 /* MenuPrincipalView.swift */,
+				D12492C82950C23E0018E150 /* Registrar */,
+				D12492C92950C3D50018E150 /* VerUsuario */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
@@ -264,9 +295,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				D12492CD2950C41D0018E150 /* RegistrarUsuarioViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
+				D12492C72950C09D0018E150 /* MenuPrincipalView.swift in Sources */,
+				D12492CB2950C3F30018E150 /* RegistrarUsuarioView.swift in Sources */,
+				D12492D12950C46B0018E150 /* VerUsuarioViewModel.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D12492CF2950C45A0018E150 /* VerUsuarioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
