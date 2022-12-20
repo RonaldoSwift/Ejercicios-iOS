@@ -11,7 +11,7 @@ struct MenuPrincipalView: View {
     var body: some View {
         NavigationView {
             VStack{
-                Text("Usuario")
+                Text("Menu")
                     .font(.largeTitle)
                     .bold()
                     .foregroundColor(Color.black)
@@ -25,9 +25,9 @@ struct MenuPrincipalView: View {
                 Spacer()
                 
                 NavigationLink(){
-                    
+                    RegistrarUsuarioView()
                 } label: {
-                    Text("Registrar".uppercased())
+                    Text("Bienvenido".uppercased())
                         .font(.largeTitle)
                         .fontWeight(.bold)
                         .padding()

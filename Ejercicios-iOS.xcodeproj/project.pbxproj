@@ -12,6 +12,8 @@
 		D12492CD2950C41D0018E150 /* RegistrarUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492CC2950C41D0018E150 /* RegistrarUsuarioViewModel.swift */; };
 		D12492CF2950C45A0018E150 /* VerUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492CE2950C45A0018E150 /* VerUsuarioView.swift */; };
 		D12492D12950C46B0018E150 /* VerUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */; };
+		D18103B62951463E00645C3A /* MenuPrincipalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18103B52951463E00645C3A /* MenuPrincipalViewModel.swift */; };
+		D1CF13C229511B9F00E3DC1C /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF13C129511B9F00E3DC1C /* Usuario.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -46,6 +48,8 @@
 		D12492CC2950C41D0018E150 /* RegistrarUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegistrarUsuarioViewModel.swift; sourceTree = "<group>"; };
 		D12492CE2950C45A0018E150 /* VerUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioView.swift; sourceTree = "<group>"; };
 		D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioViewModel.swift; sourceTree = "<group>"; };
+		D18103B52951463E00645C3A /* MenuPrincipalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalViewModel.swift; sourceTree = "<group>"; };
+		D1CF13C129511B9F00E3DC1C /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -103,6 +107,31 @@
 			path = VerUsuario;
 			sourceTree = "<group>";
 		};
+		D18103B4295145F300645C3A /* Menu */ = {
+			isa = PBXGroup;
+			children = (
+				D12492C62950C09D0018E150 /* MenuPrincipalView.swift */,
+				D18103B52951463E00645C3A /* MenuPrincipalViewModel.swift */,
+			);
+			path = Menu;
+			sourceTree = "<group>";
+		};
+		D1CF13BF295113CD00E3DC1C /* CoreData */ = {
+			isa = PBXGroup;
+			children = (
+				FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */,
+			);
+			path = CoreData;
+			sourceTree = "<group>";
+		};
+		D1CF13C029511B8500E3DC1C /* Modelo */ = {
+			isa = PBXGroup;
+			children = (
+				D1CF13C129511B9F00E3DC1C /* Usuario.swift */,
+			);
+			path = Modelo;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -126,14 +155,15 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
-				D12492C62950C09D0018E150 /* MenuPrincipalView.swift */,
+				D1CF13BF295113CD00E3DC1C /* CoreData */,
+				D18103B4295145F300645C3A /* Menu */,
+				D1CF13C029511B8500E3DC1C /* Modelo */,
 				D12492C82950C23E0018E150 /* Registrar */,
 				D12492C92950C3D50018E150 /* VerUsuario */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
 				FB91C5452919E11800B6F025 /* Persistence.swift */,
-				FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */,
 				FB91C5422919E11800B6F025 /* Preview Content */,
 			);
 			path = "Ejercicios-iOS";
@@ -298,10 +328,12 @@
 				D12492CD2950C41D0018E150 /* RegistrarUsuarioViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				D12492C72950C09D0018E150 /* MenuPrincipalView.swift in Sources */,
+				D18103B62951463E00645C3A /* MenuPrincipalViewModel.swift in Sources */,
 				D12492CB2950C3F30018E150 /* RegistrarUsuarioView.swift in Sources */,
 				D12492D12950C46B0018E150 /* VerUsuarioViewModel.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D1CF13C229511B9F00E3DC1C /* Usuario.swift in Sources */,
 				D12492CF2950C45A0018E150 /* VerUsuarioView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
