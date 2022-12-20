@@ -25,7 +25,7 @@ struct MenuPrincipalView: View {
                 Spacer()
                 
                 NavigationLink(){
-                    RegistrarUsuarioView()
+                    VerUsuarioView()
                 } label: {
                     Text("Bienvenido".uppercased())
                         .font(.largeTitle)
