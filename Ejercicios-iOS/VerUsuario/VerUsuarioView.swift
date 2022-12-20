@@ -8,8 +8,32 @@
 import SwiftUI
 
 struct VerUsuarioView: View {
+    
+    let verUsuarioViewModel : VerUsuarioViewModel = VerUsuarioViewModel()
+    
+    @State private var usuarios : [Usuario] = []
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+        if #available(iOS 16.0, *) {
+            List{
+                ForEach(usuarios, id: \.id){ (usuario: Usuario) in
+                    Section{
+                        Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
+                            .foregroundColor(Color.black)
+                            .background(Color.white)
+                    }
+                }
+            }
+            .task {
+                let descriptionDeUsuario = await verUsuarioViewModel.obtenerTodosLosUsuarios()
+                usuarios = descriptionDeUsuario
+            }
+            .background(Color("ColorFondoPrincipal"))
+            .scrollContentBackground(.hidden)
+            .navigationTitle("Reporte de Usuarios")
+        } else {
+            // Fallback on earlier versions
+        }
     }
 }
 
