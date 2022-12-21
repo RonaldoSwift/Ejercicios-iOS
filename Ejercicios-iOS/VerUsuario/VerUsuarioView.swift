@@ -18,7 +18,9 @@ struct VerUsuarioView: View {
             if #available(iOS 16.0, *) {
                 HStack{
                     Text("Añadir Usuario: ")
+                    
                     Spacer()
+                    
                     NavigationLink {
                         RegistrarUsuarioView()
                     } label: {
@@ -29,25 +31,30 @@ struct VerUsuarioView: View {
                     }
                 }
                 
-                List{
-                    ForEach(usuarios, id: \.id){ (usuario: Usuario) in
-                        Section{
-                            Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
-                                .foregroundColor(Color.black)
-                                .background(Color.white)
+                if(usuarios.count > 0){
+                    List{
+                        ForEach(usuarios, id: \.id){ (usuario: Usuario) in
+                            Section{ //Probar si es necesario
+                                Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
+                            }
                         }
                     }
+                    .scrollContentBackground(.hidden)
+                    .navigationTitle("Reporte de Usuarios")
                 }
-                .task {
-                    let descriptionDeUsuario = await verUsuarioViewModel.obtenerTodosLosUsuarios()
-                    usuarios = descriptionDeUsuario
+                else{
+                    Spacer()
+                    Text("No se encontraon resultados")
+                    Spacer()
                 }
-                .background(Color("ColorFondoPrincipal"))
-                .scrollContentBackground(.hidden)
-                .navigationTitle("Reporte de Usuarios")
+                
             } else {
                 // Fallback on earlier versions
             }
+        }
+        .task {
+            let descriptionDeUsuario = await verUsuarioViewModel.obtenerTodosLosUsuarios()
+            usuarios = descriptionDeUsuario
         }
         .padding()
         .background(Color("ColorFondoPrincipal"))

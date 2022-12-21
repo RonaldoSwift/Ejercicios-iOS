@@ -34,10 +34,12 @@ class RegistrarUsuarioViewModel: ObservableObject{
     
     private func crear(nombre:String, apellido:String, dni: Int, edad:Int) throws -> (){
         let usuarioEntity = UsuarioEntity(context: persitenContainer.viewContext)
+        usuarioEntity.id = Int64(Int.random(in: 1..<100))
         usuarioEntity.nombre = nombre
         usuarioEntity.apellido = apellido
         usuarioEntity.dni = Int64(dni)
         usuarioEntity.edad = Int64(edad)
+        saveContext()
     }
     
     private func saveContext(){
