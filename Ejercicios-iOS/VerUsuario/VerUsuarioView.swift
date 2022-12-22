@@ -34,7 +34,9 @@ struct VerUsuarioView: View {
                 if(usuarios.count > 0){
                     List{
                         ForEach(usuarios, id: \.id){ (usuario: Usuario) in
-                            Section{ //Probar si es necesario
+                            NavigationLink {
+                                EditarUsuarioView()
+                            } label: {
                                 Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
                             }
                         }

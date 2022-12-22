@@ -15,7 +15,6 @@ struct RegistrarUsuarioView: View {
     //Alert
     @State private var alert = false
     
-    
     var registrarUsuarioViewModel: RegistrarUsuarioViewModel = RegistrarUsuarioViewModel()
     
     var body: some View {
