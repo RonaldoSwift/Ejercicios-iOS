@@ -13,6 +13,8 @@
 		D12492CF2950C45A0018E150 /* VerUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492CE2950C45A0018E150 /* VerUsuarioView.swift */; };
 		D12492D12950C46B0018E150 /* VerUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */; };
 		D142C86C2954B476007D10B7 /* EditarUsuarioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D142C86B2954B476007D10B7 /* EditarUsuarioView.swift */; };
+		D142C86E2954CAB9007D10B7 /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D142C86D2954CAB9007D10B7 /* SharedViewModel.swift */; };
+		D142C8702954D509007D10B7 /* EditarUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D142C86F2954D509007D10B7 /* EditarUsuarioViewModel.swift */; };
 		D18103B62951463E00645C3A /* MenuPrincipalViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D18103B52951463E00645C3A /* MenuPrincipalViewModel.swift */; };
 		D1CF13C229511B9F00E3DC1C /* Usuario.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1CF13C129511B9F00E3DC1C /* Usuario.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
@@ -50,6 +52,8 @@
 		D12492CE2950C45A0018E150 /* VerUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioView.swift; sourceTree = "<group>"; };
 		D12492D02950C46B0018E150 /* VerUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioViewModel.swift; sourceTree = "<group>"; };
 		D142C86B2954B476007D10B7 /* EditarUsuarioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarUsuarioView.swift; sourceTree = "<group>"; };
+		D142C86D2954CAB9007D10B7 /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		D142C86F2954D509007D10B7 /* EditarUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarUsuarioViewModel.swift; sourceTree = "<group>"; };
 		D18103B52951463E00645C3A /* MenuPrincipalViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalViewModel.swift; sourceTree = "<group>"; };
 		D1CF13C129511B9F00E3DC1C /* Usuario.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Usuario.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -113,6 +117,7 @@
 			isa = PBXGroup;
 			children = (
 				D142C86B2954B476007D10B7 /* EditarUsuarioView.swift */,
+				D142C86F2954D509007D10B7 /* EditarUsuarioViewModel.swift */,
 			);
 			path = EditarUsuario;
 			sourceTree = "<group>";
@@ -176,6 +181,7 @@
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
 				FB91C5452919E11800B6F025 /* Persistence.swift */,
 				FB91C5422919E11800B6F025 /* Preview Content */,
+				D142C86D2954CAB9007D10B7 /* SharedViewModel.swift */,
 			);
 			path = "Ejercicios-iOS";
 			sourceTree = "<group>";
@@ -339,7 +345,9 @@
 				D12492CD2950C41D0018E150 /* RegistrarUsuarioViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				D12492C72950C09D0018E150 /* MenuPrincipalView.swift in Sources */,
+				D142C8702954D509007D10B7 /* EditarUsuarioViewModel.swift in Sources */,
 				D18103B62951463E00645C3A /* MenuPrincipalViewModel.swift in Sources */,
+				D142C86E2954CAB9007D10B7 /* SharedViewModel.swift in Sources */,
 				D12492CB2950C3F30018E150 /* RegistrarUsuarioView.swift in Sources */,
 				D12492D12950C46B0018E150 /* VerUsuarioViewModel.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,

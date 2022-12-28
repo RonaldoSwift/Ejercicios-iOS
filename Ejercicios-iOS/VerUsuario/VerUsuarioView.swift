@@ -34,11 +34,7 @@ struct VerUsuarioView: View {
                 if(usuarios.count > 0){
                     List{
                         ForEach(usuarios, id: \.id){ (usuario: Usuario) in
-                            NavigationLink {
-                                EditarUsuarioView()
-                            } label: {
-                                Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
-                            }
+                            celdaDeUsuario(usuario: usuario)
                         }
                     }
                     .scrollContentBackground(.hidden)
@@ -60,6 +56,14 @@ struct VerUsuarioView: View {
         }
         .padding()
         .background(Color("ColorFondoPrincipal"))
+    }
+    
+    private  func celdaDeUsuario(usuario: Usuario) -> some View {
+        return  NavigationLink {
+            EditarUsuarioView(usuario: usuario)
+        } label: {
+            Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
+        }
     }
 }
 

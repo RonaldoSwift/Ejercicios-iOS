@@ -16,6 +16,7 @@ struct RegistrarUsuarioView: View {
     @State private var alert = false
     
     var registrarUsuarioViewModel: RegistrarUsuarioViewModel = RegistrarUsuarioViewModel()
+    @EnvironmentObject var sharedViewModel : SharedViewModel
     
     var body: some View {
         VStack{
@@ -65,6 +66,10 @@ struct RegistrarUsuarioView: View {
             .cornerRadius(10)
             
             Button {
+                sharedViewModel.guardarNombre(nombre: registrarNombre)
+                sharedViewModel.guardarApellido(apellido: registrarApellido)
+                sharedViewModel.guardarDni(dni: Int(registrarDni)!)
+                sharedViewModel.guardarEdad(edad: Int(registrarEdad)!)
                 Task{
                     await registrarUsuarioViewModel.crearCliente(nombre: registrarNombre,apellido: registrarApellido,dni: Int(registrarDni)! ,edad: Int(registrarEdad)!)
                 }
