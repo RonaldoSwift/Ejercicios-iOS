@@ -4,7 +4,7 @@
         <attribute name="apellido" optional="YES" attributeType="String"/>
         <attribute name="dni" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
         <attribute name="edad" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
-        <attribute name="id" optional="YES" attributeType="Integer 64" defaultValueString="0" usesScalarValueType="YES"/>
+        <attribute name="id" optional="YES" attributeType="UUID" usesScalarValueType="NO"/>
         <attribute name="nombre" optional="YES" attributeType="String"/>
     </entity>
 </model>

@@ -35,6 +35,7 @@ class VerUsuarioViewModel {
         return try persistenContainer.viewContext.fetch(request).map({
             (usuarioEntity: UsuarioEntity) in
             Usuario(
+                id: usuarioEntity.id!,
                 nombre: usuarioEntity.nombre!,
                 apellido: usuarioEntity.apellido!,
                 dni: Int(usuarioEntity.dni),

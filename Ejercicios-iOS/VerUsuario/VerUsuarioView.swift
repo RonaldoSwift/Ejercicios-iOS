@@ -62,7 +62,7 @@ struct VerUsuarioView: View {
         return  NavigationLink {
             EditarUsuarioView(usuario: usuario)
         } label: {
-            Text("Nombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
+            Text("id: \(usuario.id) \nNombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
         }
     }
 }

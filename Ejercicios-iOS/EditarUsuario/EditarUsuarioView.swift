@@ -14,9 +14,9 @@ struct EditarUsuarioView: View {
     @State private var apellido : String = ""
     @State private var dni : String = ""
     @State private var edad : String = ""
+    @State private var alert = false
     
     var editarUsuarioViewModel : EditarUsuarioViewModel = EditarUsuarioViewModel()
-    
     
     var body: some View {
         VStack{
@@ -62,8 +62,15 @@ struct EditarUsuarioView: View {
             
             Button {
                 Task{
-                    await editarUsuarioViewModel.actualizarUsuario(usuario: usuario)
+                    await editarUsuarioViewModel.actualizarUsuario(
+                        id: usuario.id,
+                        nombre: nombre,
+                        apellido:apellido,
+                        dni: Int64(dni)!,
+                        edad: Int64(edad)!
+                    )
                 }
+                alert = true
             } label: {
                 Text("ACTUALIZAR".uppercased())
                     .font(.largeTitle)
@@ -72,6 +79,9 @@ struct EditarUsuarioView: View {
                     .background(Color.black)
                     .cornerRadius(10)
                     .shadow(radius: 10)
+            }
+            .alert("Usuario Actualizado", isPresented: $alert) {
+                Button("OK", role: .cancel){}
             }
         }
         .task {
@@ -88,6 +98,6 @@ struct EditarUsuarioView: View {
 
 struct EditarUsuarioView_Previews: PreviewProvider {
     static var previews: some View {
-        EditarUsuarioView(usuario: Usuario(nombre: "", apellido: "", dni: 0, edad: 0))
+        EditarUsuarioView(usuario: Usuario(id: UUID(), nombre: "", apellido: "", dni: 0, edad: 0))
     }
 }

@@ -8,7 +8,7 @@
 import Foundation
 
 struct Usuario: Identifiable{
-    var id = UUID()
+    var id : UUID
     var nombre: String
     var apellido: String
     var dni: Int

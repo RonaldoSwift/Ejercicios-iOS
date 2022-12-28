@@ -21,20 +21,26 @@ class EditarUsuarioViewModel: ObservableObject{
         }
     }
     
-    func actualizarUsuario(usuario : Usuario) async -> (){
+    func actualizarUsuario(
+        id: UUID,
+        nombre: String,
+        apellido:String,
+        dni: Int64,
+        edad: Int64
+    ) async -> (){
         do{
-            try actualizar(id: usuario.id, usuario: usuario)
+            try actualizar(id: id, nombre:nombre, apellido:apellido, dni:dni, edad:edad)
         } catch{
             fatalError("Error no se pudo actualizar")
         }
     }
     
-    private func actualizar(id: UUID, usuario:Usuario) throws -> (){
+    private func actualizar(id: UUID, nombre: String, apellido: String, dni:Int64, edad: Int64) throws -> (){
         let usuarioEntity = try getEntityById(id)!
-        usuarioEntity.nombre = usuario.nombre
-        usuarioEntity.apellido = usuario.apellido
-        usuarioEntity.dni = Int64(usuario.dni)
-        usuarioEntity.edad = Int64(usuario.edad)
+        usuarioEntity.nombre = nombre
+        usuarioEntity.apellido = apellido
+        usuarioEntity.dni = dni
+        usuarioEntity.edad = edad
         saveContext()
     }
     
