@@ -36,16 +36,18 @@ struct VerUsuarioView: View {
                         ForEach(usuarios, id: \.id){ (usuario: Usuario) in
                             celdaDeUsuario(usuario: usuario)
                         }
+                        
                     }
+                    //Color al List
                     .scrollContentBackground(.hidden)
                     .navigationTitle("Reporte de Usuarios")
+                    
                 }
                 else{
                     Spacer()
                     Text("No se encontraon resultados")
                     Spacer()
                 }
-                
             } else {
                 // Fallback on earlier versions
             }
@@ -59,10 +61,21 @@ struct VerUsuarioView: View {
     }
     
     private  func celdaDeUsuario(usuario: Usuario) -> some View {
-        return  NavigationLink {
-            EditarUsuarioView(usuario: usuario)
-        } label: {
-            Text("id: \(usuario.id) \nNombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
+        return HStack{
+            NavigationLink {
+                EditarUsuarioView(usuario: usuario)
+            } label: {
+                Text("id: \(usuario.id) \nNombre: \(usuario.nombre) \nApellido: \(usuario.apellido) \nDNI: \(usuario.dni) \nEdad: \(usuario.edad)")
+            }
+            Image("tacho")
+                .resizable()
+                .scaledToFit()
+                .frame(width: 30, height: 30)
+                .onTapGesture {
+                    Task{
+                        await verUsuarioViewModel.eliminarUsuario(usuario.id)
+                    }
+                }
         }
     }
 }
