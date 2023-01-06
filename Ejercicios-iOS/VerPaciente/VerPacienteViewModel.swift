@@ -21,6 +21,14 @@ class VerPacienteViewModel : ObservableObject{
         }
     }
     
+    func eliminarPaciente(_ id: UUID) async -> (){
+        do{
+            try eliminar(id)
+        } catch{
+            fatalError("Error no se pudo eliminar")
+        }
+    }
+    
     func obtenerTodosLosPacientes() async -> [Paciente]{
         do{
             let paciente = try getAll()
@@ -29,6 +37,19 @@ class VerPacienteViewModel : ObservableObject{
             return []
         }
     }
+    
+    private func eliminar(_ id: UUID) throws -> (){
+        let pacienteEntity = try getEntityById(id)!
+        let context = persistenContainer.viewContext
+        context.delete(pacienteEntity)
+        do{
+            try context.save()
+        } catch{
+            context.rollback()
+            fatalError("Error \(error.localizedDescription)")
+        }
+    }
+    
     
     private func getAll() throws ->[Paciente]{
         let request = PacienteEntity.fetchRequest()
@@ -43,6 +64,15 @@ class VerPacienteViewModel : ObservableObject{
                 dni: Int(pacienteEntity.dni)
             )
         })
+    }
+    
+    private func getEntityById(_ id: UUID) throws -> PacienteEntity?{
+        let request = PacienteEntity.fetchRequest()
+        request.fetchLimit = 1
+        request.predicate = NSPredicate(format: "id = %@", id.uuidString)
+        let context = persistenContainer.viewContext
+        let pacienteEntity = try context.fetch(request)[0]
+        return pacienteEntity
     }
     
     private func saveContext(){

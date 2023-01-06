@@ -21,16 +21,17 @@ class AgregarPacienteViewModel: ObservableObject {
         }
     }
     
-    func crearPaciente(nombre:String, apellido:String, caso:String, edad:Int, dni:Int) async{
+    func crearPaciente(id: UUID,nombre:String, apellido:String, caso:String, edad:Int, dni:Int) async{
         do{
-            try crear( nombre: nombre, apellido: apellido, caso: caso, edad: edad, dni: dni)
+            try crear( id: id, nombre: nombre, apellido: apellido, caso: caso, edad: edad, dni: dni)
         } catch{
             fatalError("No se pudo agregar Paciente")
         }
     }
     
-    private func crear( nombre:String, apellido:String, caso: String, edad: Int, dni: Int) throws -> (){
+    private func crear(id: UUID, nombre:String, apellido:String, caso: String, edad: Int, dni: Int) throws -> (){
         let pacienteEntity = PacienteEntity(context: persistenContainer.viewContext)
+        pacienteEntity.id = id
         pacienteEntity.nombre = nombre
         pacienteEntity.apellido = apellido
         pacienteEntity.caso = caso

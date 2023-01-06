@@ -47,7 +47,7 @@ struct VerPacienteView: View {
     private func celdaDePaciente(paciente: Paciente) -> some View{
         return HStack{
             NavigationLink {
-                //EditarPacienteView
+                EditarPacienteView(paciente: paciente)
             } label: {
                 Text("ID: \(paciente.id) \nNombre: \(paciente.nombre) \nApellido: \(paciente.apellido) \nCaso: \(paciente.caso) \nEdad: \(paciente.edad) \nDni: \(paciente.dni)")
             }
@@ -57,7 +57,7 @@ struct VerPacienteView: View {
                 .frame(width: 30,height: 30)
                 .onTapGesture {
                     Task{
-//                        await verPacienteViewModel.eliminarPaciente(paciente.id)
+                        await verPacienteViewModel.eliminarPaciente(paciente.id)
                     }
                 }
         }

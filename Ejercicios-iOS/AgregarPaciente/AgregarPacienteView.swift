@@ -17,6 +17,8 @@ struct AgregarPacienteView: View {
     @State private var alert = false
     
     var agregarPacienteViewModel : AgregarPacienteViewModel = AgregarPacienteViewModel()
+    @EnvironmentObject var sharedViewModel : SharedViewModel
+    
     
     var body: some View {
         VStack{
@@ -67,8 +69,15 @@ struct AgregarPacienteView: View {
             .cornerRadius(10)
             
             Button {
+                sharedViewModel.guardarNombre(nombre: ingreseNombre)
+                sharedViewModel.guardarApellido(apellido: ingreseApellido)
+                sharedViewModel.guardarCaso(caso: ingreseCaso)
+                sharedViewModel.guardarEdad(edad: Int(ingreseEdad)!)
+                sharedViewModel.guardarDni(dni: Int(ingreseDni)!)
+                
                 Task{
                     await agregarPacienteViewModel.crearPaciente(
+                        id: UUID(),
                         nombre:ingreseNombre,
                         apellido:ingreseApellido,
                         caso:ingreseCaso,

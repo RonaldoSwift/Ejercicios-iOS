@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D14D2FD829679DEE00E57B43 /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D2FD729679DED00E57B43 /* SharedViewModel.swift */; };
+		D14D2FDB2967BCB100E57B43 /* EditarPacienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D2FDA2967BCB100E57B43 /* EditarPacienteView.swift */; };
+		D14D2FDD2967BD0100E57B43 /* EditarPacienteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D2FDC2967BD0100E57B43 /* EditarPacienteViewModel.swift */; };
 		D1FD03E6295E49B60071C6F4 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD03E5295E49B60071C6F4 /* MenuPrincipalView.swift */; };
 		D1FD03EB295E4FAB0071C6F4 /* AgregarPacienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD03EA295E4FAB0071C6F4 /* AgregarPacienteView.swift */; };
 		D1FD03ED295E4FC70071C6F4 /* AgregarPacienteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD03EC295E4FC70071C6F4 /* AgregarPacienteViewModel.swift */; };
@@ -14,10 +17,8 @@
 		D1FD03F3295E6AB90071C6F4 /* VerPacienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD03F2295E6AB90071C6F4 /* VerPacienteView.swift */; };
 		D1FD03F5295E6ACE0071C6F4 /* VerPacienteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1FD03F4295E6ACE0071C6F4 /* VerPacienteViewModel.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
-		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
 		FB91C5442919E11800B6F025 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5432919E11800B6F025 /* Preview Assets.xcassets */; };
-		FB91C5462919E11800B6F025 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C5452919E11800B6F025 /* Persistence.swift */; };
 		FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */; };
 		FB91C5532919E11900B6F025 /* Ejercicios_iOSTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C5522919E11900B6F025 /* Ejercicios_iOSTests.swift */; };
 		FB91C55D2919E11900B6F025 /* Ejercicios_iOSUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C55C2919E11900B6F025 /* Ejercicios_iOSUITests.swift */; };
@@ -42,6 +43,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D14D2FD729679DED00E57B43 /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
+		D14D2FDA2967BCB100E57B43 /* EditarPacienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPacienteView.swift; sourceTree = "<group>"; };
+		D14D2FDC2967BD0100E57B43 /* EditarPacienteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPacienteViewModel.swift; sourceTree = "<group>"; };
 		D1FD03E5295E49B60071C6F4 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
 		D1FD03EA295E4FAB0071C6F4 /* AgregarPacienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarPacienteView.swift; sourceTree = "<group>"; };
 		D1FD03EC295E4FC70071C6F4 /* AgregarPacienteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AgregarPacienteViewModel.swift; sourceTree = "<group>"; };
@@ -50,10 +54,8 @@
 		D1FD03F4295E6ACE0071C6F4 /* VerPacienteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerPacienteViewModel.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
-		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		FB91C5402919E11800B6F025 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB91C5432919E11800B6F025 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		FB91C5452919E11800B6F025 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
 		FB91C5482919E11800B6F025 /* Ejercicios_iOS.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Ejercicios_iOS.xcdatamodel; sourceTree = "<group>"; };
 		FB91C54E2919E11900B6F025 /* Ejercicios-iOSTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Ejercicios-iOSTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C5522919E11900B6F025 /* Ejercicios_iOSTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSTests.swift; sourceTree = "<group>"; };
@@ -87,6 +89,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D14D2FD629679DCD00E57B43 /* SharedViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D14D2FD729679DED00E57B43 /* SharedViewModel.swift */,
+			);
+			path = SharedViewModel;
+			sourceTree = "<group>";
+		};
+		D14D2FD92967BC7C00E57B43 /* EditarPaciente */ = {
+			isa = PBXGroup;
+			children = (
+				D14D2FDA2967BCB100E57B43 /* EditarPacienteView.swift */,
+				D14D2FDC2967BD0100E57B43 /* EditarPacienteViewModel.swift */,
+			);
+			path = EditarPaciente;
+			sourceTree = "<group>";
+		};
 		D1FD03E4295E49970071C6F4 /* MenuPrincipal */ = {
 			isa = PBXGroup;
 			children = (
@@ -153,15 +172,15 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D14D2FD92967BC7C00E57B43 /* EditarPaciente */,
+				D14D2FD629679DCD00E57B43 /* SharedViewModel */,
 				D1FD03F1295E5AA50071C6F4 /* CoreData */,
 				D1FD03EE295E51ED0071C6F4 /* ModeloPaciente */,
 				D1FD03E4295E49970071C6F4 /* MenuPrincipal */,
 				D1FD03E7295E4EB70071C6F4 /* AgregarPaciente */,
 				D1FD03E8295E4ED20071C6F4 /* VerPaciente */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
-				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
-				FB91C5452919E11800B6F025 /* Persistence.swift */,
 				FB91C5422919E11800B6F025 /* Preview Content */,
 			);
 			path = "Ejercicios-iOS";
@@ -322,16 +341,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				D14D2FDB2967BCB100E57B43 /* EditarPacienteView.swift in Sources */,
 				D1FD03F5295E6ACE0071C6F4 /* VerPacienteViewModel.swift in Sources */,
 				D1FD03EB295E4FAB0071C6F4 /* AgregarPacienteView.swift in Sources */,
 				D1FD03F3295E6AB90071C6F4 /* VerPacienteView.swift in Sources */,
+				D14D2FDD2967BD0100E57B43 /* EditarPacienteViewModel.swift in Sources */,
 				D1FD03F0295E52110071C6F4 /* Paciente.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
 				D1FD03E6295E49B60071C6F4 /* MenuPrincipalView.swift in Sources */,
-				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				D1FD03ED295E4FC70071C6F4 /* AgregarPacienteViewModel.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D14D2FD829679DEE00E57B43 /* SharedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
