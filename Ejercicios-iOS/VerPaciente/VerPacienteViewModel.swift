@@ -7,6 +7,7 @@
 
 import Foundation
 import CoreData
+import Alamofire
 
 class VerPacienteViewModel : ObservableObject{
     
@@ -21,6 +22,8 @@ class VerPacienteViewModel : ObservableObject{
         }
     }
     
+    //Metodos para CoreData
+    
     func eliminarPaciente(_ id: UUID) async -> (){
         do{
             try eliminar(id)
@@ -31,8 +34,8 @@ class VerPacienteViewModel : ObservableObject{
     
     func obtenerTodosLosPacientes() async -> [Paciente]{
         do{
-            let paciente = try getAll()
-            return paciente
+            let pacientes = try getAll()
+            return pacientes
         } catch{
             return []
         }

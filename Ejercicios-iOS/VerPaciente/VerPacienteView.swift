@@ -58,6 +58,7 @@ struct VerPacienteView: View {
                 .onTapGesture {
                     Task{
                         await verPacienteViewModel.eliminarPaciente(paciente.id)
+                        pacientes = await verPacienteViewModel.obtenerTodosLosPacientes()
                     }
                 }
         }

@@ -40,13 +40,29 @@ struct MenuPrincipalView: View {
                 NavigationLink {
                     VerPacienteView()
                 } label: {
-                    Text("REGISTRO DE PACIENTE".uppercased())
+                    Text("VER PACIENTE DESDE BASE DE DATOS".uppercased())
                         .padding()
                         .shadow(radius: 10)
                         .cornerRadius(10)
                     
                 }
                 .foregroundColor(Color.white)
+                .frame (maxWidth: 300)
+                .background(Color.black)
+                .cornerRadius(10)
+                .padding()
+                
+                
+                NavigationLink {
+                    VerUsuariosView()
+                } label: {
+                    Text("VER USUARIO DESDE WEB SERVICE".uppercased())
+                        .padding()
+                        .shadow(radius: 10)
+                        .cornerRadius(10)
+                    
+                }
+                .foregroundColor(Color.orange)
                 .frame (maxWidth: 300)
                 .background(Color.black)
                 .cornerRadius(10)

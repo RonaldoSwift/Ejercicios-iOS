@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1350DA52968A70600E6FADE /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1350DA42968A70600E6FADE /* Alamofire */; };
+		D1350DA92968A92700E6FADE /* GetUsuariosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1350DA82968A92700E6FADE /* GetUsuariosResponse.swift */; };
+		D1350DAC2968AC4C00E6FADE /* VerUsuariosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1350DAB2968AC4C00E6FADE /* VerUsuariosView.swift */; };
+		D1350DAF2968AC7B00E6FADE /* VerUsuarioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1350DAE2968AC7B00E6FADE /* VerUsuarioViewModel.swift */; };
 		D14D2FD829679DEE00E57B43 /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D2FD729679DED00E57B43 /* SharedViewModel.swift */; };
 		D14D2FDB2967BCB100E57B43 /* EditarPacienteView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D2FDA2967BCB100E57B43 /* EditarPacienteView.swift */; };
 		D14D2FDD2967BD0100E57B43 /* EditarPacienteViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D14D2FDC2967BD0100E57B43 /* EditarPacienteViewModel.swift */; };
@@ -43,6 +47,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1350DA82968A92700E6FADE /* GetUsuariosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetUsuariosResponse.swift; sourceTree = "<group>"; };
+		D1350DAB2968AC4C00E6FADE /* VerUsuariosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuariosView.swift; sourceTree = "<group>"; };
+		D1350DAE2968AC7B00E6FADE /* VerUsuarioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerUsuarioViewModel.swift; sourceTree = "<group>"; };
 		D14D2FD729679DED00E57B43 /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
 		D14D2FDA2967BCB100E57B43 /* EditarPacienteView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPacienteView.swift; sourceTree = "<group>"; };
 		D14D2FDC2967BD0100E57B43 /* EditarPacienteViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EditarPacienteViewModel.swift; sourceTree = "<group>"; };
@@ -69,6 +76,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1350DA52968A70600E6FADE /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -89,6 +97,32 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1350DA62968A84C00E6FADE /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				D1FD03F1295E5AA50071C6F4 /* CoreData */,
+				D1350DA72968A85900E6FADE /* WebService */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		D1350DA72968A85900E6FADE /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				D1350DA82968A92700E6FADE /* GetUsuariosResponse.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D1350DAA2968AC3700E6FADE /* VerUsuarios */ = {
+			isa = PBXGroup;
+			children = (
+				D1350DAB2968AC4C00E6FADE /* VerUsuariosView.swift */,
+				D1350DAE2968AC7B00E6FADE /* VerUsuarioViewModel.swift */,
+			);
+			path = VerUsuarios;
+			sourceTree = "<group>";
+		};
 		D14D2FD629679DCD00E57B43 /* SharedViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,9 +206,10 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D1350DAA2968AC3700E6FADE /* VerUsuarios */,
+				D1350DA62968A84C00E6FADE /* Data */,
 				D14D2FD92967BC7C00E57B43 /* EditarPaciente */,
 				D14D2FD629679DCD00E57B43 /* SharedViewModel */,
-				D1FD03F1295E5AA50071C6F4 /* CoreData */,
 				D1FD03EE295E51ED0071C6F4 /* ModeloPaciente */,
 				D1FD03E4295E49970071C6F4 /* MenuPrincipal */,
 				D1FD03E7295E4EB70071C6F4 /* AgregarPaciente */,
@@ -227,6 +262,9 @@
 			dependencies = (
 			);
 			name = "Ejercicios-iOS";
+			packageProductDependencies = (
+				D1350DA42968A70600E6FADE /* Alamofire */,
+			);
 			productName = "Ejercicios-iOS";
 			productReference = FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -299,6 +337,9 @@
 				Base,
 			);
 			mainGroup = FB91C5302919E11300B6F025;
+			packageReferences = (
+				D1350DA32968A70600E6FADE /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FB91C53A2919E11300B6F025 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -343,8 +384,10 @@
 			files = (
 				D14D2FDB2967BCB100E57B43 /* EditarPacienteView.swift in Sources */,
 				D1FD03F5295E6ACE0071C6F4 /* VerPacienteViewModel.swift in Sources */,
+				D1350DA92968A92700E6FADE /* GetUsuariosResponse.swift in Sources */,
 				D1FD03EB295E4FAB0071C6F4 /* AgregarPacienteView.swift in Sources */,
 				D1FD03F3295E6AB90071C6F4 /* VerPacienteView.swift in Sources */,
+				D1350DAF2968AC7B00E6FADE /* VerUsuarioViewModel.swift in Sources */,
 				D14D2FDD2967BD0100E57B43 /* EditarPacienteViewModel.swift in Sources */,
 				D1FD03F0295E52110071C6F4 /* Paciente.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
@@ -352,6 +395,7 @@
 				D1FD03ED295E4FC70071C6F4 /* AgregarPacienteViewModel.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
 				D14D2FD829679DEE00E57B43 /* SharedViewModel.swift in Sources */,
+				D1350DAC2968AC4C00E6FADE /* VerUsuariosView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -672,6 +716,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1350DA32968A70600E6FADE /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 5.0.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1350DA42968A70600E6FADE /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1350DA32968A70600E6FADE /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */ = {
