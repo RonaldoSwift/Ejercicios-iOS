@@ -7,6 +7,25 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1A131F4296E349000D5D572 /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1A131F3296E349000D5D572 /* Alamofire */; };
+		D1A131F7296F269C00D5D572 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A131F6296F269C00D5D572 /* MenuPrincipalView.swift */; };
+		D1A131FA296F377700D5D572 /* GetProductosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A131F9296F377700D5D572 /* GetProductosResponse.swift */; };
+		D1A131FD296F5CA500D5D572 /* VerProductosView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A131FC296F5CA500D5D572 /* VerProductosView.swift */; };
+		D1A131FF296F5CDF00D5D572 /* VerProductosViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A131FE296F5CDF00D5D572 /* VerProductosViewModel.swift */; };
+		D1A13201296F6A9800D5D572 /* PostProductosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A13200296F6A9800D5D572 /* PostProductosRequest.swift */; };
+		D1A13203296F6ABD00D5D572 /* PostProductosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A13202296F6ABD00D5D572 /* PostProductosResponse.swift */; };
+		D1A13206296F6D0000D5D572 /* CrearProductoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A13205296F6D0000D5D572 /* CrearProductoView.swift */; };
+		D1A13208296F6D1100D5D572 /* CrearProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A13207296F6D1100D5D572 /* CrearProductoViewModel.swift */; };
+		D1A1320B2970D6A400D5D572 /* PutProductosRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1320A2970D6A400D5D572 /* PutProductosRequest.swift */; };
+		D1A1320D2970D70F00D5D572 /* PutProductosResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1320C2970D70F00D5D572 /* PutProductosResponse.swift */; };
+		D1A1320F2970D74800D5D572 /* ActualizarProductoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1320E2970D74700D5D572 /* ActualizarProductoView.swift */; };
+		D1A132112970D76C00D5D572 /* ActualizarProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A132102970D76C00D5D572 /* ActualizarProductoViewModel.swift */; };
+		D1A132142970E85200D5D572 /* ReproducirMusicaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A132132970E85200D5D572 /* ReproducirMusicaView.swift */; };
+		D1A132162970E88800D5D572 /* ReproducirMusicaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A132152970E88800D5D572 /* ReproducirMusicaViewModel.swift */; };
+		D1A1321A2971D11400D5D572 /* EliminarProductoView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A132192971D11300D5D572 /* EliminarProductoView.swift */; };
+		D1A1321C2971D12800D5D572 /* EliminarProductoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1321B2971D12800D5D572 /* EliminarProductoViewModel.swift */; };
+		D1A1321E2972154C00D5D572 /* DeleteProductoRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1321D2972154C00D5D572 /* DeleteProductoRequest.swift */; };
+		D1A132202972235C00D5D572 /* DeleteProductoResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1A1321F2972235B00D5D572 /* DeleteProductoResponse.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -36,6 +55,25 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1A131F6296F269C00D5D572 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		D1A131F9296F377700D5D572 /* GetProductosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetProductosResponse.swift; sourceTree = "<group>"; };
+		D1A131FC296F5CA500D5D572 /* VerProductosView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerProductosView.swift; sourceTree = "<group>"; };
+		D1A131FE296F5CDF00D5D572 /* VerProductosViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerProductosViewModel.swift; sourceTree = "<group>"; };
+		D1A13200296F6A9800D5D572 /* PostProductosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProductosRequest.swift; sourceTree = "<group>"; };
+		D1A13202296F6ABD00D5D572 /* PostProductosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostProductosResponse.swift; sourceTree = "<group>"; };
+		D1A13205296F6D0000D5D572 /* CrearProductoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearProductoView.swift; sourceTree = "<group>"; };
+		D1A13207296F6D1100D5D572 /* CrearProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearProductoViewModel.swift; sourceTree = "<group>"; };
+		D1A1320A2970D6A400D5D572 /* PutProductosRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutProductosRequest.swift; sourceTree = "<group>"; };
+		D1A1320C2970D70F00D5D572 /* PutProductosResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutProductosResponse.swift; sourceTree = "<group>"; };
+		D1A1320E2970D74700D5D572 /* ActualizarProductoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarProductoView.swift; sourceTree = "<group>"; };
+		D1A132102970D76C00D5D572 /* ActualizarProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarProductoViewModel.swift; sourceTree = "<group>"; };
+		D1A132132970E85200D5D572 /* ReproducirMusicaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReproducirMusicaView.swift; sourceTree = "<group>"; };
+		D1A132152970E88800D5D572 /* ReproducirMusicaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReproducirMusicaViewModel.swift; sourceTree = "<group>"; };
+		D1A132172970EA5400D5D572 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		D1A132192971D11300D5D572 /* EliminarProductoView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliminarProductoView.swift; sourceTree = "<group>"; };
+		D1A1321B2971D12800D5D572 /* EliminarProductoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EliminarProductoViewModel.swift; sourceTree = "<group>"; };
+		D1A1321D2972154C00D5D572 /* DeleteProductoRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProductoRequest.swift; sourceTree = "<group>"; };
+		D1A1321F2972235B00D5D572 /* DeleteProductoResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteProductoResponse.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +93,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A131F4296E349000D5D572 /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +114,73 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1A131F5296F264F00D5D572 /* MenuPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				D1A131F6296F269C00D5D572 /* MenuPrincipalView.swift */,
+			);
+			path = MenuPrincipal;
+			sourceTree = "<group>";
+		};
+		D1A131F8296F374800D5D572 /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				D1A131F9296F377700D5D572 /* GetProductosResponse.swift */,
+				D1A13200296F6A9800D5D572 /* PostProductosRequest.swift */,
+				D1A13202296F6ABD00D5D572 /* PostProductosResponse.swift */,
+				D1A1320A2970D6A400D5D572 /* PutProductosRequest.swift */,
+				D1A1320C2970D70F00D5D572 /* PutProductosResponse.swift */,
+				D1A1321D2972154C00D5D572 /* DeleteProductoRequest.swift */,
+				D1A1321F2972235B00D5D572 /* DeleteProductoResponse.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
+		D1A131FB296F5C7F00D5D572 /* VerProductos */ = {
+			isa = PBXGroup;
+			children = (
+				D1A131FC296F5CA500D5D572 /* VerProductosView.swift */,
+				D1A131FE296F5CDF00D5D572 /* VerProductosViewModel.swift */,
+			);
+			path = VerProductos;
+			sourceTree = "<group>";
+		};
+		D1A13204296F6CE700D5D572 /* CrearProducto */ = {
+			isa = PBXGroup;
+			children = (
+				D1A13205296F6D0000D5D572 /* CrearProductoView.swift */,
+				D1A13207296F6D1100D5D572 /* CrearProductoViewModel.swift */,
+			);
+			path = CrearProducto;
+			sourceTree = "<group>";
+		};
+		D1A132092970D60C00D5D572 /* ActualizarProducto */ = {
+			isa = PBXGroup;
+			children = (
+				D1A1320E2970D74700D5D572 /* ActualizarProductoView.swift */,
+				D1A132102970D76C00D5D572 /* ActualizarProductoViewModel.swift */,
+			);
+			path = ActualizarProducto;
+			sourceTree = "<group>";
+		};
+		D1A132122970E82000D5D572 /* ReproductorDeMusica */ = {
+			isa = PBXGroup;
+			children = (
+				D1A132132970E85200D5D572 /* ReproducirMusicaView.swift */,
+				D1A132152970E88800D5D572 /* ReproducirMusicaViewModel.swift */,
+			);
+			path = ReproductorDeMusica;
+			sourceTree = "<group>";
+		};
+		D1A132182971D0AE00D5D572 /* EliminarProducto */ = {
+			isa = PBXGroup;
+			children = (
+				D1A132192971D11300D5D572 /* EliminarProductoView.swift */,
+				D1A1321B2971D12800D5D572 /* EliminarProductoViewModel.swift */,
+			);
+			path = EliminarProducto;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +204,14 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D1A132182971D0AE00D5D572 /* EliminarProducto */,
+				D1A132172970EA5400D5D572 /* Info.plist */,
+				D1A132122970E82000D5D572 /* ReproductorDeMusica */,
+				D1A132092970D60C00D5D572 /* ActualizarProducto */,
+				D1A13204296F6CE700D5D572 /* CrearProducto */,
+				D1A131FB296F5C7F00D5D572 /* VerProductos */,
+				D1A131F8296F374800D5D572 /* WebService */,
+				D1A131F5296F264F00D5D572 /* MenuPrincipal */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
@@ -149,6 +263,9 @@
 			dependencies = (
 			);
 			name = "Ejercicios-iOS";
+			packageProductDependencies = (
+				D1A131F3296E349000D5D572 /* Alamofire */,
+			);
 			productName = "Ejercicios-iOS";
 			productReference = FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +338,9 @@
 				Base,
 			);
 			mainGroup = FB91C5302919E11300B6F025;
+			packageReferences = (
+				D1A131F2296E349000D5D572 /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FB91C53A2919E11300B6F025 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -263,10 +383,28 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1A13208296F6D1100D5D572 /* CrearProductoViewModel.swift in Sources */,
+				D1A13201296F6A9800D5D572 /* PostProductosRequest.swift in Sources */,
+				D1A131FD296F5CA500D5D572 /* VerProductosView.swift in Sources */,
+				D1A132162970E88800D5D572 /* ReproducirMusicaViewModel.swift in Sources */,
+				D1A132142970E85200D5D572 /* ReproducirMusicaView.swift in Sources */,
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				D1A131FF296F5CDF00D5D572 /* VerProductosViewModel.swift in Sources */,
+				D1A1321C2971D12800D5D572 /* EliminarProductoViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
+				D1A1320D2970D70F00D5D572 /* PutProductosResponse.swift in Sources */,
+				D1A131F7296F269C00D5D572 /* MenuPrincipalView.swift in Sources */,
+				D1A132112970D76C00D5D572 /* ActualizarProductoViewModel.swift in Sources */,
+				D1A13203296F6ABD00D5D572 /* PostProductosResponse.swift in Sources */,
+				D1A1321E2972154C00D5D572 /* DeleteProductoRequest.swift in Sources */,
+				D1A1321A2971D11400D5D572 /* EliminarProductoView.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
+				D1A1320F2970D74800D5D572 /* ActualizarProductoView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D1A13206296F6D0000D5D572 /* CrearProductoView.swift in Sources */,
+				D1A1320B2970D6A400D5D572 /* PutProductosRequest.swift in Sources */,
+				D1A131FA296F377700D5D572 /* GetProductosResponse.swift in Sources */,
+				D1A132202972235C00D5D572 /* DeleteProductoResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,6 +567,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Ejercicios-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ejercicios-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -457,6 +596,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Ejercicios-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ejercicios-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -587,6 +727,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1A131F2296E349000D5D572 /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1A131F3296E349000D5D572 /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1A131F2296E349000D5D572 /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */ = {
