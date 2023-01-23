@@ -10,6 +10,8 @@ import AVFoundation
 
 class ReproducirMusicaViewModel: ObservableObject{
     
+    var avAudioSession: AVAudioSession!
+    
     var avPlayer: AVPlayer!
     
     var isPlaying: Bool{
@@ -31,5 +33,25 @@ class ReproducirMusicaViewModel: ObservableObject{
             return print("Se intento pasuar la musica mientras no esta reproduciendo")
         }
         avPlayer.pause()
+    }
+    
+//    grabar voz
+    
+    func configurarPermisoParaGrabar(){
+        avAudioSession = AVAudioSession.sharedInstance()
+        do{
+            try avAudioSession.setCategory(.playAndRecord, mode: .default)
+            try avAudioSession.setActive(true)
+            avAudioSession.requestRecordPermission { [unowned self] permisoActivado in
+                DispatchQueue.main.async {
+                    if(permisoActivado){
+                        print("GRAVANDO...")
+                    } else{
+                        
+                    }
+                }
+            }
+        } catch let error{
+        }
     }
 }

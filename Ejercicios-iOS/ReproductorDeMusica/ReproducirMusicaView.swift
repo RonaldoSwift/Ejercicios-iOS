@@ -56,6 +56,13 @@ struct ReproducirMusicaView: View {
                 .padding()
                 .border(Color.black, width: 3.0)
                 
+                Button {
+                    reproducirMusicaViewModel.configurarPermisoParaGrabar()
+                } label: {
+                    Text("Grabar voz")
+                }
+                
+                
             }
         }
         .padding()
