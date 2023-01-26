@@ -7,6 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1B526B92981DD3F00FC9B6D /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526B82981DD3F00FC9B6D /* MenuPrincipalView.swift */; };
+		D1B526BB2981DD6F00FC9B6D /* CrearComidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526BA2981DD6F00FC9B6D /* CrearComidaView.swift */; };
+		D1B526BD2981DD7F00FC9B6D /* CrearComidaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526BC2981DD7F00FC9B6D /* CrearComidaViewModel.swift */; };
+		D1B526BF2981DD8D00FC9B6D /* VerComidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526BE2981DD8D00FC9B6D /* VerComidaView.swift */; };
+		D1B526C12981DD9B00FC9B6D /* VerComidaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526C02981DD9B00FC9B6D /* VerComidaViewModel.swift */; };
+		D1B526C32981DDAD00FC9B6D /* ActualizarComidaView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526C22981DDAD00FC9B6D /* ActualizarComidaView.swift */; };
+		D1B526C52981DDBC00FC9B6D /* ActualizarComidaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526C42981DDBC00FC9B6D /* ActualizarComidaViewModel.swift */; };
+		D1B526C72981DEB200FC9B6D /* PutComidasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526C62981DEB200FC9B6D /* PutComidasResponse.swift */; };
+		D1B526C92981DECB00FC9B6D /* PutComidasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526C82981DECB00FC9B6D /* PutComidasRequest.swift */; };
+		D1B526CF2981DF1700FC9B6D /* PostComidasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526CE2981DF1700FC9B6D /* PostComidasResponse.swift */; };
+		D1B526D12981DF2900FC9B6D /* PostComidasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526D02981DF2900FC9B6D /* PostComidasRequest.swift */; };
+		D1B526D32981DF4B00FC9B6D /* GetComidasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526D22981DF4B00FC9B6D /* GetComidasResponse.swift */; };
+		D1B526D52981DF6000FC9B6D /* DeleteComidasResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526D42981DF6000FC9B6D /* DeleteComidasResponse.swift */; };
+		D1B526D72981DF7800FC9B6D /* DeleteComidasRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526D62981DF7800FC9B6D /* DeleteComidasRequest.swift */; };
+		D1B526DA2981E74400FC9B6D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1B526D92981E74400FC9B6D /* Alamofire */; };
+		D1B526DC2981F47100FC9B6D /* SharedComidaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526DB2981F47100FC9B6D /* SharedComidaViewModel.swift */; };
+		D1B526DE2981F9EE00FC9B6D /* ComidaImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -36,6 +53,22 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1B526B82981DD3F00FC9B6D /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		D1B526BA2981DD6F00FC9B6D /* CrearComidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearComidaView.swift; sourceTree = "<group>"; };
+		D1B526BC2981DD7F00FC9B6D /* CrearComidaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrearComidaViewModel.swift; sourceTree = "<group>"; };
+		D1B526BE2981DD8D00FC9B6D /* VerComidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerComidaView.swift; sourceTree = "<group>"; };
+		D1B526C02981DD9B00FC9B6D /* VerComidaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VerComidaViewModel.swift; sourceTree = "<group>"; };
+		D1B526C22981DDAD00FC9B6D /* ActualizarComidaView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarComidaView.swift; sourceTree = "<group>"; };
+		D1B526C42981DDBC00FC9B6D /* ActualizarComidaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ActualizarComidaViewModel.swift; sourceTree = "<group>"; };
+		D1B526C62981DEB200FC9B6D /* PutComidasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutComidasResponse.swift; sourceTree = "<group>"; };
+		D1B526C82981DECB00FC9B6D /* PutComidasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PutComidasRequest.swift; sourceTree = "<group>"; };
+		D1B526CE2981DF1700FC9B6D /* PostComidasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComidasResponse.swift; sourceTree = "<group>"; };
+		D1B526D02981DF2900FC9B6D /* PostComidasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostComidasRequest.swift; sourceTree = "<group>"; };
+		D1B526D22981DF4B00FC9B6D /* GetComidasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GetComidasResponse.swift; sourceTree = "<group>"; };
+		D1B526D42981DF6000FC9B6D /* DeleteComidasResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteComidasResponse.swift; sourceTree = "<group>"; };
+		D1B526D62981DF7800FC9B6D /* DeleteComidasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteComidasRequest.swift; sourceTree = "<group>"; };
+		D1B526DB2981F47100FC9B6D /* SharedComidaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComidaViewModel.swift; sourceTree = "<group>"; };
+		D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaImageView.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -55,6 +88,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1B526DA2981E74400FC9B6D /* Alamofire in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -75,6 +109,56 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1B526B32981DCEA00FC9B6D /* MenuPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				D1B526B82981DD3F00FC9B6D /* MenuPrincipalView.swift */,
+			);
+			path = MenuPrincipal;
+			sourceTree = "<group>";
+		};
+		D1B526B42981DCF300FC9B6D /* CrearComida */ = {
+			isa = PBXGroup;
+			children = (
+				D1B526BA2981DD6F00FC9B6D /* CrearComidaView.swift */,
+				D1B526BC2981DD7F00FC9B6D /* CrearComidaViewModel.swift */,
+			);
+			path = CrearComida;
+			sourceTree = "<group>";
+		};
+		D1B526B52981DD0300FC9B6D /* VerComida */ = {
+			isa = PBXGroup;
+			children = (
+				D1B526BE2981DD8D00FC9B6D /* VerComidaView.swift */,
+				D1B526C02981DD9B00FC9B6D /* VerComidaViewModel.swift */,
+				D1B526DB2981F47100FC9B6D /* SharedComidaViewModel.swift */,
+			);
+			path = VerComida;
+			sourceTree = "<group>";
+		};
+		D1B526B62981DD1200FC9B6D /* ActualizarComida */ = {
+			isa = PBXGroup;
+			children = (
+				D1B526C22981DDAD00FC9B6D /* ActualizarComidaView.swift */,
+				D1B526C42981DDBC00FC9B6D /* ActualizarComidaViewModel.swift */,
+			);
+			path = ActualizarComida;
+			sourceTree = "<group>";
+		};
+		D1B526B72981DD1F00FC9B6D /* WebService */ = {
+			isa = PBXGroup;
+			children = (
+				D1B526C62981DEB200FC9B6D /* PutComidasResponse.swift */,
+				D1B526C82981DECB00FC9B6D /* PutComidasRequest.swift */,
+				D1B526CE2981DF1700FC9B6D /* PostComidasResponse.swift */,
+				D1B526D02981DF2900FC9B6D /* PostComidasRequest.swift */,
+				D1B526D22981DF4B00FC9B6D /* GetComidasResponse.swift */,
+				D1B526D42981DF6000FC9B6D /* DeleteComidasResponse.swift */,
+				D1B526D62981DF7800FC9B6D /* DeleteComidasRequest.swift */,
+			);
+			path = WebService;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -98,12 +182,18 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D1B526B72981DD1F00FC9B6D /* WebService */,
+				D1B526B62981DD1200FC9B6D /* ActualizarComida */,
+				D1B526B52981DD0300FC9B6D /* VerComida */,
+				D1B526B42981DCF300FC9B6D /* CrearComida */,
+				D1B526B32981DCEA00FC9B6D /* MenuPrincipal */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
 				FB91C5452919E11800B6F025 /* Persistence.swift */,
 				FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */,
 				FB91C5422919E11800B6F025 /* Preview Content */,
+				D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */,
 			);
 			path = "Ejercicios-iOS";
 			sourceTree = "<group>";
@@ -149,6 +239,9 @@
 			dependencies = (
 			);
 			name = "Ejercicios-iOS";
+			packageProductDependencies = (
+				D1B526D92981E74400FC9B6D /* Alamofire */,
+			);
 			productName = "Ejercicios-iOS";
 			productReference = FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */;
 			productType = "com.apple.product-type.application";
@@ -221,6 +314,9 @@
 				Base,
 			);
 			mainGroup = FB91C5302919E11300B6F025;
+			packageReferences = (
+				D1B526D82981E74400FC9B6D /* XCRemoteSwiftPackageReference "Alamofire" */,
+			);
 			productRefGroup = FB91C53A2919E11300B6F025 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -264,9 +360,25 @@
 			buildActionMask = 2147483647;
 			files = (
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				D1B526D52981DF6000FC9B6D /* DeleteComidasResponse.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
+				D1B526D32981DF4B00FC9B6D /* GetComidasResponse.swift in Sources */,
+				D1B526B92981DD3F00FC9B6D /* MenuPrincipalView.swift in Sources */,
+				D1B526C92981DECB00FC9B6D /* PutComidasRequest.swift in Sources */,
+				D1B526D12981DF2900FC9B6D /* PostComidasRequest.swift in Sources */,
+				D1B526DE2981F9EE00FC9B6D /* ComidaImageView.swift in Sources */,
+				D1B526BF2981DD8D00FC9B6D /* VerComidaView.swift in Sources */,
+				D1B526BB2981DD6F00FC9B6D /* CrearComidaView.swift in Sources */,
+				D1B526BD2981DD7F00FC9B6D /* CrearComidaViewModel.swift in Sources */,
+				D1B526DC2981F47100FC9B6D /* SharedComidaViewModel.swift in Sources */,
+				D1B526C12981DD9B00FC9B6D /* VerComidaViewModel.swift in Sources */,
+				D1B526CF2981DF1700FC9B6D /* PostComidasResponse.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D1B526C52981DDBC00FC9B6D /* ActualizarComidaViewModel.swift in Sources */,
+				D1B526C32981DDAD00FC9B6D /* ActualizarComidaView.swift in Sources */,
+				D1B526C72981DEB200FC9B6D /* PutComidasResponse.swift in Sources */,
+				D1B526D72981DF7800FC9B6D /* DeleteComidasRequest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -587,6 +699,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		D1B526D82981E74400FC9B6D /* XCRemoteSwiftPackageReference "Alamofire" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/Alamofire/Alamofire";
+			requirement = {
+				branch = master;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		D1B526D92981E74400FC9B6D /* Alamofire */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = D1B526D82981E74400FC9B6D /* XCRemoteSwiftPackageReference "Alamofire" */;
+			productName = Alamofire;
+		};
+/* End XCSwiftPackageProductDependency section */
 
 /* Begin XCVersionGroup section */
 		FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */ = {
