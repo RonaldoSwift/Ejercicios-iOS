@@ -17,7 +17,7 @@ struct ComidaImageView: View {
             Button {
                 comidaImageViewModel.configurarPermisoParaGrabar()
             } label: {
-                Text("Grabar voz")
+                Text("Pedir Permiso de Microfono")
             }
             .padding()
             .frame(width: 300, height: 50)
@@ -25,6 +25,20 @@ struct ComidaImageView: View {
             .background(Color("Botones"))
             .foregroundColor(Color.white)
             .cornerRadius(10)
+            
+            Button {
+                comidaImageViewModel.empezarAGrabar()
+            } label: {
+                Text("Empezar a grabar")
+            }
+
+            Button {
+                comidaImageViewModel.terminarGrabacion(esExitoso: true)
+            } label: {
+                Text("Detener Grabacion")
+            }
+            
+            
         }
     }
 }
