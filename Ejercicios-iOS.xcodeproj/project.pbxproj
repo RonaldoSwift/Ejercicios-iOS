@@ -24,6 +24,7 @@
 		D1B526DA2981E74400FC9B6D /* Alamofire in Frameworks */ = {isa = PBXBuildFile; productRef = D1B526D92981E74400FC9B6D /* Alamofire */; };
 		D1B526DC2981F47100FC9B6D /* SharedComidaViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526DB2981F47100FC9B6D /* SharedComidaViewModel.swift */; };
 		D1B526DE2981F9EE00FC9B6D /* ComidaImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */; };
+		D1B526E12981FFDC00FC9B6D /* ComidaImageViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1B526E02981FFDC00FC9B6D /* ComidaImageViewModel.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -69,6 +70,8 @@
 		D1B526D62981DF7800FC9B6D /* DeleteComidasRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeleteComidasRequest.swift; sourceTree = "<group>"; };
 		D1B526DB2981F47100FC9B6D /* SharedComidaViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedComidaViewModel.swift; sourceTree = "<group>"; };
 		D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaImageView.swift; sourceTree = "<group>"; };
+		D1B526E02981FFDC00FC9B6D /* ComidaImageViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ComidaImageViewModel.swift; sourceTree = "<group>"; };
+		D1B526E22982048500FC9B6D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -159,6 +162,15 @@
 			path = WebService;
 			sourceTree = "<group>";
 		};
+		D1B526DF2981FFBF00FC9B6D /* ComidaImage */ = {
+			isa = PBXGroup;
+			children = (
+				D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */,
+				D1B526E02981FFDC00FC9B6D /* ComidaImageViewModel.swift */,
+			);
+			path = ComidaImage;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -182,6 +194,8 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D1B526E22982048500FC9B6D /* Info.plist */,
+				D1B526DF2981FFBF00FC9B6D /* ComidaImage */,
 				D1B526B72981DD1F00FC9B6D /* WebService */,
 				D1B526B62981DD1200FC9B6D /* ActualizarComida */,
 				D1B526B52981DD0300FC9B6D /* VerComida */,
@@ -193,7 +207,6 @@
 				FB91C5452919E11800B6F025 /* Persistence.swift */,
 				FB91C5472919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld */,
 				FB91C5422919E11800B6F025 /* Preview Content */,
-				D1B526DD2981F9EE00FC9B6D /* ComidaImageView.swift */,
 			);
 			path = "Ejercicios-iOS";
 			sourceTree = "<group>";
@@ -371,6 +384,7 @@
 				D1B526BB2981DD6F00FC9B6D /* CrearComidaView.swift in Sources */,
 				D1B526BD2981DD7F00FC9B6D /* CrearComidaViewModel.swift in Sources */,
 				D1B526DC2981F47100FC9B6D /* SharedComidaViewModel.swift in Sources */,
+				D1B526E12981FFDC00FC9B6D /* ComidaImageViewModel.swift in Sources */,
 				D1B526C12981DD9B00FC9B6D /* VerComidaViewModel.swift in Sources */,
 				D1B526CF2981DF1700FC9B6D /* PostComidasResponse.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
@@ -541,6 +555,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Ejercicios-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ejercicios-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -569,6 +584,7 @@
 				DEVELOPMENT_ASSET_PATHS = "\"Ejercicios-iOS/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = "Ejercicios-iOS/Info.plist";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
