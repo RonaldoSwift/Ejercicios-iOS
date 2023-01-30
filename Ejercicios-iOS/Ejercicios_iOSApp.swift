@@ -9,12 +9,13 @@ import SwiftUI
 
 @main
 struct Ejercicios_iOSApp: App {
-    let persistenceController = PersistenceController.shared
-
+    
+    var  sharedViewModel: SharedViewModel = SharedViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
-                .environment(\.managedObjectContext, persistenceController.container.viewContext)
+            MenuPrincipalView()
+                .environmentObject(sharedViewModel)
         }
     }
 }

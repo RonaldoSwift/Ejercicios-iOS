@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D1029C9C29886DCC00A0FBB4 /* MenuPrincipalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1029C9B29886DCC00A0FBB4 /* MenuPrincipalView.swift */; };
+		D1029CA02988737F00A0FBB4 /* GrabarAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1029C9F2988737E00A0FBB4 /* GrabarAudioView.swift */; };
+		D1029CA22988739100A0FBB4 /* GrabarAuidioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1029CA12988739100A0FBB4 /* GrabarAuidioViewModel.swift */; };
+		D1029CA4298873AD00A0FBB4 /* ReproducirAudioView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1029CA3298873AD00A0FBB4 /* ReproducirAudioView.swift */; };
+		D1029CA6298873C200A0FBB4 /* ReproducirAudioViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1029CA5298873C200A0FBB4 /* ReproducirAudioViewModel.swift */; };
+		D1029CA92988753500A0FBB4 /* SharedViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D1029CA82988753500A0FBB4 /* SharedViewModel.swift */; };
 		FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */; };
 		FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB91C53E2919E11300B6F025 /* ContentView.swift */; };
 		FB91C5412919E11800B6F025 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB91C5402919E11800B6F025 /* Assets.xcassets */; };
@@ -36,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		D1029C9B29886DCC00A0FBB4 /* MenuPrincipalView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuPrincipalView.swift; sourceTree = "<group>"; };
+		D1029C9F2988737E00A0FBB4 /* GrabarAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabarAudioView.swift; sourceTree = "<group>"; };
+		D1029CA12988739100A0FBB4 /* GrabarAuidioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GrabarAuidioViewModel.swift; sourceTree = "<group>"; };
+		D1029CA3298873AD00A0FBB4 /* ReproducirAudioView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReproducirAudioView.swift; sourceTree = "<group>"; };
+		D1029CA5298873C200A0FBB4 /* ReproducirAudioViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReproducirAudioViewModel.swift; sourceTree = "<group>"; };
+		D1029CA82988753500A0FBB4 /* SharedViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SharedViewModel.swift; sourceTree = "<group>"; };
 		FB91C5392919E11300B6F025 /* Ejercicios-iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Ejercicios-iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Ejercicios_iOSApp.swift; sourceTree = "<group>"; };
 		FB91C53E2919E11300B6F025 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -75,6 +87,40 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		D1029C9829886DA600A0FBB4 /* MenuPrincipal */ = {
+			isa = PBXGroup;
+			children = (
+				D1029C9B29886DCC00A0FBB4 /* MenuPrincipalView.swift */,
+			);
+			path = MenuPrincipal;
+			sourceTree = "<group>";
+		};
+		D1029C9D2988734800A0FBB4 /* GrabarAudioView */ = {
+			isa = PBXGroup;
+			children = (
+				D1029C9F2988737E00A0FBB4 /* GrabarAudioView.swift */,
+				D1029CA12988739100A0FBB4 /* GrabarAuidioViewModel.swift */,
+			);
+			path = GrabarAudioView;
+			sourceTree = "<group>";
+		};
+		D1029C9E2988735700A0FBB4 /* ReproducirAudioView */ = {
+			isa = PBXGroup;
+			children = (
+				D1029CA3298873AD00A0FBB4 /* ReproducirAudioView.swift */,
+				D1029CA5298873C200A0FBB4 /* ReproducirAudioViewModel.swift */,
+			);
+			path = ReproducirAudioView;
+			sourceTree = "<group>";
+		};
+		D1029CA72988751E00A0FBB4 /* SharedViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				D1029CA82988753500A0FBB4 /* SharedViewModel.swift */,
+			);
+			path = SharedViewModel;
+			sourceTree = "<group>";
+		};
 		FB91C5302919E11300B6F025 = {
 			isa = PBXGroup;
 			children = (
@@ -98,6 +144,10 @@
 		FB91C53B2919E11300B6F025 /* Ejercicios-iOS */ = {
 			isa = PBXGroup;
 			children = (
+				D1029CA72988751E00A0FBB4 /* SharedViewModel */,
+				D1029C9E2988735700A0FBB4 /* ReproducirAudioView */,
+				D1029C9D2988734800A0FBB4 /* GrabarAudioView */,
+				D1029C9829886DA600A0FBB4 /* MenuPrincipal */,
 				FB91C53C2919E11300B6F025 /* Ejercicios_iOSApp.swift */,
 				FB91C53E2919E11300B6F025 /* ContentView.swift */,
 				FB91C5402919E11800B6F025 /* Assets.xcassets */,
@@ -263,10 +313,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D1029CA4298873AD00A0FBB4 /* ReproducirAudioView.swift in Sources */,
 				FB91C5462919E11800B6F025 /* Persistence.swift in Sources */,
+				D1029CA6298873C200A0FBB4 /* ReproducirAudioViewModel.swift in Sources */,
 				FB91C5492919E11800B6F025 /* Ejercicios_iOS.xcdatamodeld in Sources */,
+				D1029CA22988739100A0FBB4 /* GrabarAuidioViewModel.swift in Sources */,
+				D1029CA02988737F00A0FBB4 /* GrabarAudioView.swift in Sources */,
+				D1029C9C29886DCC00A0FBB4 /* MenuPrincipalView.swift in Sources */,
 				FB91C53F2919E11300B6F025 /* ContentView.swift in Sources */,
 				FB91C53D2919E11300B6F025 /* Ejercicios_iOSApp.swift in Sources */,
+				D1029CA92988753500A0FBB4 /* SharedViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
