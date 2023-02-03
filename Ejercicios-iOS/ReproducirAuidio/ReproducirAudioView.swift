@@ -23,7 +23,7 @@ struct ReproducirAudioView: View{
             Spacer()
             
             Button {
-                reproducirAudioViewModel.loadMusic(urlDeMusica: sharedViewmodel.url)
+                reproducirAudioViewModel.loadMusic(urlDeMusica: URL(string: "https://storage.googleapis.com/ronaldo_bucket/Nino.mp3"))
             } label: {
                 Image("Cargando")
                     .resizable()
